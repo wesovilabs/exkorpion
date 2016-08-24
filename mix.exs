@@ -5,6 +5,8 @@ defmodule Exkorpion.Mixfile do
     [app: :exkorpion,
      version: "0.0.1",
      elixir: "~> 1.3",
+     name: "Exkorpion",
+     source_url: "https://github.com/wesovilabs/exkorpion",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
