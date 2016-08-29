@@ -1,10 +1,10 @@
 # Exkorpion
 
-**TODO: Add description**
+**Exkorpion is a framework that will help developers to write tests in a BDD form.**
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+If [available in Hex](http://hexdocs.pm/exkorpion), the package can be installed as:
 
   1. Add `exkorpion` to your list of dependencies in `mix.exs`:
 
