@@ -22,14 +22,17 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
     end
     ```
 
+## Getting started with Exkorpion
+
+As was mentioned above Exkorpion is a test framework focused on helping developers to work under BDD.  Then, as you could guess the syntax
+will look like Given-When-Then.  
+
+Below you can find some very basic examples of use of **Exkorpio**
     
 ## Project status
 
 Just starting with basic functionality to hopefully get some feedback and continue working on new functionalities.
     
-## Getting started with Exkorpion
-
-As was mentioned above Exkorpion is a test framework focused on helping developers to work under BDD.
 
 ## Contributors
 
