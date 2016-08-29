@@ -104,7 +104,9 @@ In order to write new tests with Exkorpion, we need to consider the below:
 
 3. So far, we can write two types of tests: 
     
-    - The ones that we only want to run for a case.
+    - We can write basic tests with the required 3 steps: Given, When and Then and the tests will be performed in this order. An example of this
+    type of tests can be found in the above example: **it "sum positive numbers works as expected"** and **it "does multiple operations depending on vairable input"**
+    
     
     - We could extend the test by defining different inputs for the same tests. We can achieve by adding **with** to our map declaration, as we can see in
     **it "does multiple operations depending on vairable input"**
