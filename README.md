@@ -106,8 +106,8 @@ In order to write new tests with Exkorpion, we need to consider the below:
     
     - The ones that we only want to run for a case.
     
-    - We could extend the test by dfining different inputs. We can achieve by adding **with** to our map declaration, as we can see in
-    it "does multiple operations depending on vairable input" do
+    - We could extend the test by defining different inputs for the same tests. We can achieve by adding **with** to our map declaration, as we can see in
+    **it "does multiple operations depending on vairable input"**
     
     
 ## Project status
