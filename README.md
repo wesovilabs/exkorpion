@@ -21,8 +21,18 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
       [applications: [:exkorpion]]
     end
     ```
+
+    
+## Project status
     
 ## Getting started with Exkorpion
 
-As I mentioned abouve Exkorpion is a testing framework focused on helping developers to work under BDD.
+As was mentioned above Exkorpion is a test framework focused on helping developers to work under BDD.
 
+## Contributors
+
+- **Iván Corrales Solera** , <developer@wesovi.com>, [@wesovilabs](https://www.twitter.com/wesovilabs)
+
+## Roadmap
+
+## Stable version
