@@ -40,3 +40,5 @@ As was mentioned above Exkorpion is a test framework focused on helping develope
 Since this project just started as a PoC  there's not yet a real Roadmap,  this will be available very soon.
 
 ## Stable version
+
+So far only 0.0.1 version is launched. 
