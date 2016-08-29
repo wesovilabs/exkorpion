@@ -98,7 +98,16 @@ Below you can find some very basic examples of how to use  **Exkorpion**
     
 In order to write new tests with Exkorpion, we need to consider the below:
     
-1. Add **use Exkorpion**
+1. Add **use Exkorpion** after module declaration.
+
+2. A **scenario** will be compounds by one of multiple cases, which are represented by **it*
+
+3. So far, we can write two types of tests: 
+    
+    - The ones that we only want to run for a case.
+    
+    - We could extend the test by dfining different inputs. We can achieve by adding **with** to our map declaration, as we can see in
+    it "does multiple operations depending on vairable input" do
     
     
 ## Project status
