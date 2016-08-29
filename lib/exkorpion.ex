@@ -41,7 +41,7 @@ defmodule Exkorpion do
             scenarioType = fn
               (%{:with => with_, :given => given_, :when => when_, :then => then_}) -> runTestMultipleScenarios with_, given_, when_, then_
               (%{:given => given_, :when => when_, :then => then_}) -> runTest(given_, when_, then_)
-              (aux) -> raise %Exkorpion.Error.InvalidStructureError{message: aux} #Logger.info "other case... #{inspect aux}"
+              (aux) -> raise %Exkorpion.Error.InvalidStructureError{message: aux}
             end
 
             try do
