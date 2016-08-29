@@ -6,10 +6,12 @@ defmodule Exkorpion.Mixfile do
      version: "0.0.1",
      elixir: "~> 1.3",
      name: "Exkorpion",
+     description: description,
      source_url: "https://github.com/wesovilabs/exkorpion",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     package: package,
+     deps: deps]
   end
 
   def application do
@@ -19,7 +21,7 @@ defmodule Exkorpion.Mixfile do
 
   defp description do
     """
-        A new test generation framework.
+        Test framework to help developers to write tests in a  BDD form.
     """
   end
 
