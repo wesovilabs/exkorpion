@@ -21,4 +21,8 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
       [applications: [:exkorpion]]
     end
     ```
+    
+## Getting started with Exkorpion
+
+As I mentioned abouve Exkorpion is a testing framework focused on helping developers to work under BDD.
 
