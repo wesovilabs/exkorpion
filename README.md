@@ -4,7 +4,7 @@
 
 ## Installation
 
-If [available in Hex](http://hexdocs.pm/exkorpion), the package can be installed as:
+Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be installed as:
 
   1. Add `exkorpion` to your list of dependencies in `mix.exs`:
 
