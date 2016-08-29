@@ -1,8 +1,8 @@
-# Exkorpion
-
 [![Build Status](https://travis-ci.org/wesovilabs/exkorpion.png)](https://travis-ci.org/wesovilabs/exkorpion)
 [![Hex version](https://img.shields.io/hexpm/v/exkorpion.svg "Hex version")](https://hex.pm/packages/exkorpion)
 ![Hex downloads](https://img.shields.io/hexpm/dt/exkorpion.svg "Hex downloads")
+
+# Exkorpion
 
 **Exkorpion is a framework that will help developers to write tests in a BDD form.**
 
