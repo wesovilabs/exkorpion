@@ -27,7 +27,7 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
 As was mentioned above Exkorpion is a test framework focused on helping developers to work under BDD.  Then, as you could guess the syntax
 will look like Given-When-Then.  
 
-Below you can find some very basic examples of use of **Exkorpio**
+Below you can find some very basic examples of use of **Exkorpion**
 
     ```elixir
     defmodule ExkorpionDemo.MathOperationsTest do
