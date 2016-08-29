@@ -24,6 +24,8 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
 
     
 ## Project status
+
+Just starting with basic functionality to hopefully get some feedback and continue working on new functionalities.
     
 ## Getting started with Exkorpion
 
@@ -34,5 +36,7 @@ As was mentioned above Exkorpion is a test framework focused on helping develope
 - **Iván Corrales Solera** , <developer@wesovi.com>, [@wesovilabs](https://www.twitter.com/wesovilabs)
 
 ## Roadmap
+
+Since this project just started as a PoC  there's not yet a real Roadmap,  this will be available very soon.
 
 ## Stable version
