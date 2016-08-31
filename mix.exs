@@ -15,7 +15,7 @@ defmodule Exkorpion.Mixfile do
   end
 
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :dbg]]
   end
 
 
@@ -39,7 +39,8 @@ defmodule Exkorpion.Mixfile do
     [
        {:ex_doc, "~> 0.11", only: :dev},
        {:earmark, "~> 0.1", only: :dev},
-       {:dialyxir, "~> 0.3", only: [:dev]}
+       {:dialyxir, "~> 0.3", only: [:dev]},
+       {:dbg, github: "fishcakez/dbg"}
     ]
   end
 end

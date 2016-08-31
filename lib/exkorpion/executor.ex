@@ -1,5 +1,5 @@
 defmodule Exkorpion.Executor do
-  import Exkorpion.Util
+  
 
   def runTest given_, when_, then_ do
     given_.()
@@ -10,9 +10,9 @@ defmodule Exkorpion.Executor do
   def runTestMultipleScenarios with_, given_, when_, then_ do
     Enum.each with_.(), fn ctx ->
       given_.(ctx)
-      |> joinCtx(ctx)
+      |> Map.merge(ctx)
       |> when_.()
-      |> joinCtx(ctx)
+      |> Map.merge(ctx)
       |> then_.()
     end
   end
