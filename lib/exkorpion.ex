@@ -3,6 +3,7 @@ defmodule Exkorpion do
   import Exkorpion.Executor
   import ExUnit.Case
   import ExUnit
+  import Exkorpion.Server 
   
 
 
@@ -17,14 +18,17 @@ defmodule Exkorpion do
       import Logger
       import ExUnit.Callbacks, except: [setup: 1, setup: 2]
 
+      
     
-      def runTest given_, when_, then_ do
-        Executor.runTest given_, when_, then_
+      def runTest  given_, when_, then_ do
+        Exkorpion.Executor.runTest %{}, given_, when_, then_
       end
 
       def runTestMultipleScenarios with_, given_, when_, then_ do
-        Executor.runTestMultipleScenarios with_, given_, when_, then_
+        Exkorpion.Executor.runTestMultipleScenarios %{}, with_, given_, when_, then_
       end
+
+
     end
 
     [definition]
@@ -32,34 +36,39 @@ defmodule Exkorpion do
 
   defmacro scenario(name, options) do
     quote do
+      {:ok, pid} = Exkorpion.Server.start
+      Logger.info "Running server on #{inspect pid}"
+      ref = Process.monitor(pid)
       Logger.info "* Scenario - #{unquote(name)}"
-      test("scenario #{unquote name}", context, unquote(options))
+      test("scenario #{unquote name}", unquote(options))
     end
   end
 
 
-  defmacro beforeEach options do
+  defmacro beforeEach(options) do
+    setup = 
     quote do
-      Logger.info "* BeforeEach - #{unquote(inspect options)}"
-      def setUp do
-        (unquote(options))
-      end
-      
+      Logger.info "* BeforeEach - #{inspect (unquote(options)[:do])}"
+      globalCtx = (unquote(options)[:do])
+      setupGlobalContext(globalCtx)
     end  
+    [setup]
   end
 
   defmacro it(name, options) do
     Logger.info "** Case: #{name}"
-    
+    #Logger.info "beforeEach: #{inspect unquote(beforeEach)}"
     quote do
     
       scenario = unquote(options)
-      
+      value= Exkorpion.Server.get(:a)
+      Logger.info "Value from ctx is :a #{inspect value}"
       scenarioType = fn
         (%{:with => with_, :given => given_, :when => when_, :then => then_}) -> runTestMultipleScenarios with_, given_, when_, then_
         (%{:given => given_, :when => when_, :then => then_}) -> runTest(given_, when_, then_)
         true -> raise %Exkorpion.Error.InvalidStructureError{}
       end
+
       try do
          scenarioType.(scenario[:do])
       rescue
@@ -70,17 +79,16 @@ defmodule Exkorpion do
   end
 
 
-  def setup ctx do
-    
+  def setupGlobalContext ctx do
+    Enum.each( ctx, fn {key, value} ->
+      Exkorpion.Server.store(key, value)
+    end)  
+
   end
 
-  @spec should(atom, atom, atom) :: Boolean
-  def should operation, param1, param2 do
-    Logger.info "#{inspect param1}"
+  
+  def should(operation, param1, param2) do
     Exkorpion.Should.should operation, param1, param2
   end
-
-
-
 
 end
