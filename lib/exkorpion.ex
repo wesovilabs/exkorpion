@@ -3,7 +3,7 @@ defmodule Exkorpion do
   import Exkorpion.Executor
   import ExUnit.Case
   import ExUnit
-  import Exkorpion.Server 
+  import Exkorpion.ContextServer 
   
 
 
@@ -36,7 +36,7 @@ defmodule Exkorpion do
 
   defmacro scenario(name, options) do
     quote do
-      {:ok, pid} = Exkorpion.Server.start
+      {:ok, pid} = Exkorpion.ContextServer.start
       Logger.info "Running server on #{inspect pid}"
       ref = Process.monitor(pid)
       Logger.info "* Scenario - #{unquote(name)}"
@@ -61,7 +61,7 @@ defmodule Exkorpion do
     quote do
     
       scenario = unquote(options)
-      value= Exkorpion.Server.get(:a)
+      value= Exkorpion.ContextServer.get(:a)
       Logger.info "Value from ctx is :a #{inspect value}"
       scenarioType = fn
         (%{:with => with_, :given => given_, :when => when_, :then => then_}) -> runTestMultipleScenarios with_, given_, when_, then_
@@ -81,7 +81,7 @@ defmodule Exkorpion do
 
   def setupGlobalContext ctx do
     Enum.each( ctx, fn {key, value} ->
-      Exkorpion.Server.store(key, value)
+      Exkorpion.ContextServer.store(key, value)
     end)  
 
   end
