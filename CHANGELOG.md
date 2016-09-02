@@ -10,6 +10,7 @@
 
 ### Features
 	
-- Adding beforeEach functionality
-- Raising Assertion Errors
-- Adding exkorpion examples as part of this project
+- Adding **beforeEach** functionality
+- Raising Assertion Errors, better understanding of assertion errors
+- Adding exkorpion **examples** as part of this project
+- Creating a task that will allow us to run the tests by command **mix exkorpion**
