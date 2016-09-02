@@ -38,6 +38,7 @@ defmodule Exkorpion.MathExamplesTest do
     end
   end  
   
+  @tag :skip
   scenario "testing sum operation works as expected 2" do
     
     beforeEach do
