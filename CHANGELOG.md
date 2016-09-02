@@ -9,3 +9,5 @@
 
 
 ### Features
+	
+	- Adding beforeEach functionality
