@@ -16,6 +16,11 @@ defmodule Exkorpion.Server do
     GenServer.call(:exkorpion_server, {:get, k})
   end
 
+  def get do
+  	Logger.info "get context"
+    GenServer.call(:exkorpion_server, {:getContext})
+  end
+
 
   def handle_cast({:store, k, v}, state) do
   	Logger.info "store"
@@ -27,6 +32,11 @@ defmodule Exkorpion.Server do
   def handle_call({:get, k}, _from, state) do
   	Logger.info "get"
   	{:reply,  Map.get(state, k), state}
+  end
+
+  def handle_call({:getContext}, _from, state) do
+  	Logger.info "get context"
+  	{:reply,  state, state}
   end
 
 end
