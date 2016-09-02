@@ -11,5 +11,5 @@ before_script:
   - mix.dialyzer.plt 
 script:
   - mix credo
-  - mix.dialyzer --haly-exit-status
+  - mix dialyzer --haly-exit-status
   - MIX_ENV=test mix exkorpion
