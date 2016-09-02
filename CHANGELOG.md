@@ -11,7 +11,6 @@
 
 
 ### Features
-	
 - Adding **beforeEach** functionality
 - Raising Assertion Errors, better understanding of **assertion errors**
 - Adding exkorpion **examples** as part of this project
