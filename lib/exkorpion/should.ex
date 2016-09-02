@@ -4,12 +4,6 @@ defmodule Exkorpion.Should do
 
   
 
-
-  @spec should(atom, atom, atom) :: Boolean
-  def should op, left, right do
-  	
-  end
-
   @spec should(atom, String.t, String.t)::Boolean
   def should op, left, right do
 	
@@ -22,8 +16,8 @@ defmodule Exkorpion.Should do
 	end
 	
 	case shouldFn.(op, left, right) do
-		{:ok} -> Logger.info "\n Message: Assertion success.\n Expected: #{inspect left}\n Result: #{inspect right}" 
-		{:ko, msg, params} -> raise %Exkorpion.Error.AssertionError {message: "\n Message: #{msg}\n params: #{inspect params}"}
+		{:ok} -> Logger.info "\n Message: Assertion success.\n Expected: #{inspect left}\n Result: #{inspect right}" ;
+		{:ko, msg, params} -> Logger.error "\n Message: #{msg}\n Expected: #{inspect left}\n Result: #{inspect right}"; raise %Exkorpion.Error.AssertionError{}
 	end
 	
   end
