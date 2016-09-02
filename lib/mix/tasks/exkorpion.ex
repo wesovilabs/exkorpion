@@ -178,20 +178,20 @@ defmodule Mix.Tasks.Exkorpion do
     Mix.Task.run "app.start", args
 
     # Ensure ExUnit is loaded.
-    case Application.load(:ex_unit) do
+    case Application.load(:exkorpion) do
       :ok -> :ok
-      {:error, {:already_loaded, :ex_unit}} -> :ok
+      {:error, {:already_loaded, :exkorpion}} -> :ok
     end
 
     # Configure ExUnit with command line options before requiring
     # test helpers so that the configuration is available in helpers.
     # Then configure ExUnit again so command line options override
-    ex_unit_opts = ex_unit_opts(opts)
-    ExUnit.configure(ex_unit_opts)
+    exkorpion_opts = exkorpion_opts(opts)
+    ExUnit.configure(exkorpion_opts)
 
     scenario_paths = project[:scenario_paths] || ["scenarios"]
     Enum.each(scenario_paths, &require_scenario_helper(&1))
-    ExUnit.configure(merge_helper_opts(ex_unit_opts))
+    ExUnit.configure(merge_helper_opts(exkorpion_opts))
 
     # Finally parse, require and load the files
     scenario_files = parse_files(files, scenario_paths)
@@ -229,7 +229,7 @@ defmodule Mix.Tasks.Exkorpion do
   end
 
   @doc false
-  def ex_unit_opts(opts) do
+  def exkorpion_opts(opts) do
     opts =
       opts
       |> filter_opts(:include)
@@ -285,7 +285,7 @@ defmodule Mix.Tasks.Exkorpion do
   end
 
   defp merge_opts(opts, key) do
-    value = List.wrap Application.get_env(:ex_unit, key, [])
+    value = List.wrap Application.get_env(:exkorpion, key, [])
     Keyword.update(opts, key, value, &Enum.uniq(&1 ++ value))
   end
 
