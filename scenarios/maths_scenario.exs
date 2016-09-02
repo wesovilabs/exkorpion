@@ -32,7 +32,7 @@ defmodule Exkorpion.MathExamplesTest do
         end,
         when: &(%{c: &1.op.(&1.a ,&1.b)}),
         then: fn ctx ->
-          assert ctx.c != ctx.result
+          assert ctx.c === ctx.result
         end
       }
     end
@@ -49,7 +49,7 @@ defmodule Exkorpion.MathExamplesTest do
         given: &(%{a: &1.a, b: 3}),
         when: &(%{c: &1.a + &1.b}),
         then: fn ctx ->
-          assert ctx.c === 12
+          assert ctx.c === 13
         end
       }
     end
