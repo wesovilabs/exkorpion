@@ -94,9 +94,9 @@ Below you can find some very basic examples of how to use  **Exkorpion**
 
       it "sum negative numbers and it should work as expected" do
         %{
-        given: &(%{a: &1.a, b: -2}),
-        when: &(%{c: sum(&1.a ,&1.b)}),
-        then: &(should(:eq, &1.c, 8))
+          given: &(%{a: &1.a, b: -2}),
+          when: &(%{c: sum(&1.a ,&1.b)}),
+          then: &(should(:eq, &1.c, 8))
         }
       end
 
