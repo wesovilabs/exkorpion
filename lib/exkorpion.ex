@@ -75,12 +75,14 @@ defmodule Exkorpion do
           errorMsg = Enum.join ["\n",header, "\n", elem(__ENV__.function,0)]
           Logger.error errorMsg
           Logger.error e.message
+          raise e
 
         e in Exkorpion.Error.AssertionError -> 
            
           header = Enum.join [__ENV__.module, ", line: ", __ENV__.line] 
           errorMsg = Enum.join ["\n",header, "\n", elem(__ENV__.function,0),e.message]
           Logger.error errorMsg
+          raise e
         
         
         e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
