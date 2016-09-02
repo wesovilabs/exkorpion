@@ -8,7 +8,7 @@ elixir:
 otp_release:
   - 18.0
 before_script:
-  - mix.dialyzer.plt 
+  - mix dialyzer.plt 
 script:
   - mix credo
   - mix dialyzer --haly-exit-status
