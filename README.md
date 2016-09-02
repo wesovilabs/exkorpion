@@ -14,7 +14,7 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
 
     ```elixir
     def deps do
-      [{:exkorpion, "~> 0.0.1"}]
+      [{:exkorpion, "~> 0.0.2-rc.1"}]
     end
     ```
 
@@ -28,15 +28,14 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
 
 ## Getting started with Exkorpion
 
-As was mentioned above Exkorpion is a test framework focused on helping developers to work under BDD.  Then, as you could guess the syntax
-will look like Given-When-Then.  
+Wrapping ExUnit to achieve a BDD syntax for our tests.
 
 Below you can find some very basic examples of how to use  **Exkorpion**
 
 
 ```elixir
 
-  defmodule ExkorpionSamples.MathExamplesTest do
+  defmodule Exkorpion.MathExamplesTest do
   use Exkorpion
 
   def sum a, b do
@@ -48,8 +47,7 @@ Below you can find some very basic examples of how to use  **Exkorpion**
   end
 
 
-
-  @demo
+  
   scenario "testing sum operation works as expected" do
  
     beforeEach do
@@ -60,7 +58,7 @@ Below you can find some very basic examples of how to use  **Exkorpion**
     it "does multiple operations depending on vairable input" do
 
       %{
-        with: fn ctx->
+        with: fn ctx ->
         [
           %{param1: ctx.a, param2: 3, result: 15, op: fn a,b -> sum(a,b) end},
           %{param1: 3, param2: -2, result: 5, op: fn a,b -> subs(a,b) end}
@@ -71,7 +69,7 @@ Below you can find some very basic examples of how to use  **Exkorpion**
         end,
         when: &(%{c: &1.op.(&1.a ,&1.b)}),
         then: fn ctx ->
-          assert ctx.c != ctx.result
+          assert ctx.c === ctx.result
         end
       }
     end
@@ -88,7 +86,7 @@ Below you can find some very basic examples of how to use  **Exkorpion**
         given: &(%{a: &1.a, b: 3}),
         when: &(%{c: &1.a + &1.b}),
         then: fn ctx ->
-          assert ctx.c === 12
+          assert ctx.c === 13
         end
       }
     end
@@ -110,35 +108,26 @@ end
 ```
    
     
-In order to write new tests with Exkorpion, we need to consider the below:
-    
-1. Add **use Exkorpion** after module declaration.
+## How to run
 
-2. A **scenario** will be compounds by one of multiple cases, which are represented by **it*
-
-3. So far, we can write two types of tests: 
-    
-    - We can write basic tests with the required 3 steps: Given, When and Then and the tests will be performed in this order. An example of this
-    type of tests can be found in the above example: **it sum positive numbers works as expected** and **it does multiple operations depending on vairable input**
-    
-    
-    - We could extend the test by defining different inputs for the same tests. We can achieve by adding **with** to our map declaration, as we can see in
-    **it does multiple operations depending on vairable input**
+- Make a **scenarios* directory in your project
+- Add files with sufix **_scenario.ex** or **_scenario.exs**
+- Implementing some test as example above.
+- Run  command **MIX_ENV=test mix exkorpion**
     
     
 ## Project status
 
-Just starting with basic functionality to hopefully get some feedback and continue working on new functionalities.
+- Improving coding style 
+- Implementing new functionalities.
+- Detecting bugs and fixing them.
+- Waitign for feddback.
     
 
 ## Contributors
 
 - **Iván Corrales Solera** , <developer@wesovi.com>, [@wesovilabs](https://www.twitter.com/wesovilabs)
 
-## Roadmap
-
-Since this project just started as a PoC  there's not yet a real Roadmap,  this will be available very soon.
-
 ## Stable version
 
-So far only 0.0.1 version is launched. 
+**0.0.1** is the stable version
