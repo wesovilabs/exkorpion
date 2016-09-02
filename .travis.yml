@@ -10,6 +10,6 @@ otp_release:
 #before_script:
 #  - mix dialyzer.plt 
 script:
-  - mix credo
+  #- mix credo
   #- mix dialyzer --halt-exit-status
   - MIX_ENV=test mix exkorpion
