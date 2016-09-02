@@ -32,17 +32,9 @@ defmodule Exkorpion do
   defmacro scenario(name, options) do
 
     quote do
-      #Logger.info "Line: #{inspect __ENV__.line}"
-      #Logger.info "Module: #{inspect __ENV__.module}"
-      #Logger.info "File: #{inspect __ENV__.file}"
-      {_, _} = Exkorpion.Server.start 
-        #{:ok, pid2} 
-        #{:already_registered, _}
-      
+      Exkorpion.Server.start 
+      @exkorpion
       test("scenario #{unquote name}", unquote(options))
-      #Logger.info "Running server on #{inspect pid2}"  
-      Logger.info "* Scenario - #{unquote(name)}"
-      #Exkorpion.Server.terminate  "", :normal
     end
   end
 
@@ -70,8 +62,7 @@ defmodule Exkorpion do
       try do
          scenarioType.(scenario[:do])
       rescue
-        e in ExUnit.AssertionError -> 
-          raise e        
+        e in ExUnit.AssertionError ->  raise e        
         e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
       end
     end
@@ -85,6 +76,12 @@ defmodule Exkorpion do
 
   end
 
+
+  def run args do
+    #ExUnit.configure(exclude: [pending: true])
+    #ExUnit.configure(include: [scenario: true])
+    
+  end
 
 
 end
