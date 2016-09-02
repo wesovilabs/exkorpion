@@ -10,4 +10,4 @@
 
 ### Features
 	
-	- Adding beforeEach functionality
+- Adding beforeEach functionality
