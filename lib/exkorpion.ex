@@ -1,9 +1,15 @@
 defmodule Exkorpion do
+  @moduledoc"""
+
+  """
+
   require Logger
   import Exkorpion.Executor
   import ExUnit.Case
   import ExUnit
   import Exkorpion.Server 
+
+
 
   defmacro __using__(args) do
   
@@ -15,7 +21,6 @@ defmodule Exkorpion do
       import Logger
       import ExUnit.Callbacks, except: [setup: 1, setup: 2]
 
-      
       def runTest  given_, when_, then_ do
         Exkorpion.Executor.runTest Exkorpion.Server.get, given_, when_, then_
       end
@@ -42,8 +47,8 @@ defmodule Exkorpion do
   defmacro beforeEach(options) do
     setup = 
     quote do
-      globalCtx = (unquote(options)[:do])
-      setupGlobalContext(globalCtx)
+      global_ctx = (unquote(options)[:do])
+      setupGlobalContext(global_ctx)
     end  
     [setup]
   end
@@ -51,15 +56,15 @@ defmodule Exkorpion do
   defmacro it(name, options) do
     quote do
       scenario = unquote(options)
-      value= Exkorpion.Server.get(:a)
-      scenarioType = fn
+      value = Exkorpion.Server.get(:a)
+      scenario_type = fn
         (%{:with => with_, :given => given_, :when => when_, :then => then_}) -> runTestMultipleScenarios with_, given_, when_, then_
         (%{:given => given_, :when => when_, :then => then_}) -> runTest(given_, when_, then_)
         true -> raise %Exkorpion.Error.InvalidStructureError{}
       end
 
       try do
-         scenarioType.(scenario[:do])
+         scenario_type.(scenario[:do])
       rescue
         e in ExUnit.AssertionError ->  raise e        
         e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
@@ -69,7 +74,7 @@ defmodule Exkorpion do
 
 
   def setupGlobalContext ctx do
-    Enum.each( ctx, fn {key, value} ->
+    Enum.each(ctx, fn {key, value} ->
       Exkorpion.Server.store(key, value)
     end)  
 

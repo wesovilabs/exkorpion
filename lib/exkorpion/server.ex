@@ -1,4 +1,7 @@
 defmodule Exkorpion.Server do
+  @moduledoc"""
+
+  """
   use GenServer
   require Logger
 
@@ -20,8 +23,8 @@ defmodule Exkorpion.Server do
 
 
   def handle_cast({:store, k, v}, state) do
-  	newState = Map.put(state, k, v)
-    {:noreply, newState}
+  	new_state = Map.put(state, k, v)
+    {:noreply, new_state}
   end
 
   def handle_call({:get, k}, _from, state) do

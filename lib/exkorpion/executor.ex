@@ -1,5 +1,7 @@
 defmodule Exkorpion.Executor do
-  
+  @moduledoc"""
+
+  """
 
   def runTest context, given_, when_, then_ do
     given_.(context)
