@@ -70,7 +70,19 @@ defmodule Exkorpion do
       try do
          scenarioType.(scenario[:do])
       rescue
-        e in ExUnit.AssertionError  -> raise %Exkorpion.Error.AssertionError{message: e.message}
+        e in ExUnit.AssertionError -> 
+          header = Enum.join [__ENV__.module, ", line: ", __ENV__.line] 
+          errorMsg = Enum.join ["\n",header, "\n", elem(__ENV__.function,0)]
+          Logger.error errorMsg
+          Logger.error e.message
+
+        e in Exkorpion.Error.AssertionError -> 
+           
+          header = Enum.join [__ENV__.module, ", line: ", __ENV__.line] 
+          errorMsg = Enum.join ["\n",header, "\n", elem(__ENV__.function,0),e.message]
+          Logger.error errorMsg
+        
+        
         e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
       end
     end
@@ -86,8 +98,7 @@ defmodule Exkorpion do
 
   
   def should(operation, param1, param2) do
-    #Logger.info "Line: #{inspect __ENV__.line}"
-    #Logger.info "Module: #{inspect __ENV__.module}"
+    
     Exkorpion.Should.should operation, param1, param2
   end
 

@@ -48,7 +48,6 @@ Below you can find some very basic examples of how to use  **Exkorpion**
     end
 
 
-
     @demo
     scenario "testing sum operation works as expected" do
    
