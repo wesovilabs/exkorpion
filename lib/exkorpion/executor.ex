@@ -1,20 +1,26 @@
 defmodule Exkorpion.Executor do
   
 
-  def runTest given_, when_, then_ do
-    given_.()
+  def runTest context, given_, when_, then_ do
+    given_.(context)
     |> when_.()
     |> then_.()
   end
 
-  def runTestMultipleScenarios with_, given_, when_, then_ do
-    Enum.each with_.(), fn ctx ->
+  def runTestMultipleScenarios context, with_, given_, when_, then_ do
+    Enum.each with_.(context), fn ctx ->
       given_.(ctx)
-      |> Map.merge(ctx)
+      |> joinCtx(ctx)
+      |> joinCtx(context)
       |> when_.()
-      |> Map.merge(ctx)
+      |> joinCtx(ctx)
+      |> joinCtx(context)
       |> then_.()
     end
+  end
+
+  defp joinCtx inputCtx, partialCtx do
+    Map.merge  partialCtx, inputCtx
   end
 
 end
