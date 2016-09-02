@@ -10,7 +10,7 @@ defmodule Exkorpion.MathExamplesTest do
   end
 
 
-  @tag :pending 
+  
   scenario "testing sum operation works as expected" do
  
     beforeEach do

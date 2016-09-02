@@ -49,7 +49,6 @@ defmodule Exkorpion do
   end
 
   defmacro it(name, options) do
-    Logger.info "** Case: #{name}"
     quote do
       scenario = unquote(options)
       value= Exkorpion.Server.get(:a)

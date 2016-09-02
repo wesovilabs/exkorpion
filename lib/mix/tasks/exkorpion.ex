@@ -37,7 +37,7 @@ defmodule Mix.Tasks.Exkorpion do
   @moduledoc """
   Runs the tests for a project.
   This task starts the current application, loads up
-  `test/test_helper.exs` and then requires all files matching the
+  `test/scenario_helper.exs` and then requires all files matching the
   `test/**/_test.exs` pattern in parallel.
   A list of files can be given after the task name in order to select
   the files to compile:
@@ -97,23 +97,23 @@ defmodule Mix.Tasks.Exkorpion do
   line filter applies to every test case before the given line number, thus more
   than one test might be taken for the run.
   ## Configuration
-    * `:test_paths` - list of paths containing test files, defaults to
-      `["test"]`. It is expected all test paths to contain a `test_helper.exs`
+    * `:scenario_paths` - list of paths containing test files, defaults to
+      `["test"]`. It is expected all test paths to contain a `scenario_helper.exs`
       file.
-    * `:test_pattern` - a pattern to load test files, defaults to `*_test.exs`.
-    * `:warn_test_pattern` - a pattern to match potentially missed test files
+    * `:scenario_pattern` - a pattern to load test files, defaults to `*_test.exs`.
+    * `:warn_scenario_pattern` - a pattern to match potentially missed test files
       and display a warning, defaults to `*_test.ex`.
-    * `:test_coverage` - a set of options to be passed down to the coverage
+    * `:scenario_coverage` - a set of options to be passed down to the coverage
       mechanism.
   ## Coverage
-  The `:test_coverage` configuration accepts the following options:
+  The `:scenario_coverage` configuration accepts the following options:
     * `:output` - the output for cover results, defaults to `"cover"`
     * `:tool`   - the coverage tool
   By default, a very simple wrapper around OTP's `cover` is used as a tool,
   but it can be overridden as follows:
-      test_coverage: [tool: CoverModule]
+      scenario_coverage: [tool: CoverModule]
   `CoverModule` can be any module that exports `start/2`, receiving the
-  compilation path and the `test_coverage` options as arguments. It must
+  compilation path and the `scenario_coverage` options as arguments. It must
   return an anonymous function of zero arity that will be run after the
   test suite is done or `nil`.
   ## "Stale"
@@ -166,14 +166,14 @@ defmodule Mix.Tasks.Exkorpion do
     cover =
       if opts[:cover] do
         compile_path = Mix.Project.compile_path(project)
-        cover = Keyword.merge(@cover, project[:test_coverage] || [])
+        cover = Keyword.merge(@cover, project[:scenario_coverage] || [])
         cover[:tool].start(compile_path, cover)
       end
 
     # Start the app and configure exunit with command line options
-    # before requiring test_helper.exs so that the configuration is
-    # available in test_helper.exs. Then configure exunit again so
-    # that command line options override test_helper.exs
+    # before requiring scenario_helper.exs so that the configuration is
+    # available in scenario_helper.exs. Then configure exunit again so
+    # that command line options override scenario_helper.exs
     Mix.shell.print_app
     Mix.Task.run "app.start", args
 
@@ -189,22 +189,22 @@ defmodule Mix.Tasks.Exkorpion do
     ex_unit_opts = ex_unit_opts(opts)
     ExUnit.configure(ex_unit_opts)
 
-    test_paths = project[:test_paths] || ["scenarios"]
-    Enum.each(test_paths, &require_test_helper(&1))
+    scenario_paths = project[:scenario_paths] || ["scenarios"]
+    Enum.each(scenario_paths, &require_scenario_helper(&1))
     ExUnit.configure(merge_helper_opts(ex_unit_opts))
 
     # Finally parse, require and load the files
-    test_files = parse_files(files, test_paths)
-    test_pattern = project[:test_pattern] || "*_scenario.exs"
-    warn_test_pattern = project[:warn_test_pattern] || "*_scenario.ex"
+    scenario_files = parse_files(files, scenario_paths)
+    scenario_pattern = project[:scenario_pattern] || "*_scenario.exs"
+    warn_scenario_pattern = project[:warn_scenario_pattern] || "*_scenario.ex"
 
-    matched_test_files = Mix.Utils.extract_files(test_files, test_pattern)
-    matched_warn_test_files =
-      Mix.Utils.extract_files(test_files, warn_test_pattern) -- matched_test_files
+    matched_scenario_files = Mix.Utils.extract_files(scenario_files, scenario_pattern)
+    matched_warn_scenario_files =
+      Mix.Utils.extract_files(scenario_files, warn_scenario_pattern) -- matched_scenario_files
 
-    display_warn_test_pattern(matched_warn_test_files, test_pattern)
+    display_warn_scenario_pattern(matched_warn_scenario_files, scenario_pattern)
 
-    case CT.require_and_run(files, matched_test_files, test_paths, opts) do
+    case CT.require_and_run(files, matched_scenario_files, scenario_paths, opts) do
       {:ok, %{failures: failures}} ->
         cover && cover.()
 
@@ -222,7 +222,7 @@ defmodule Mix.Tasks.Exkorpion do
     end
   end
 
-  defp display_warn_test_pattern(files, pattern) do
+  defp display_warn_scenario_pattern(files, pattern) do
     for file <- files do
       Mix.shell.info "warning: #{file} does not match #{inspect pattern} and won't be loaded"
     end
@@ -254,11 +254,11 @@ defmodule Mix.Tasks.Exkorpion do
     end
   end
 
-  defp parse_files([], test_paths) do
-    test_paths
+  defp parse_files([], scenario_paths) do
+    scenario_paths
   end
 
-  defp parse_files([single_file], _test_paths) do
+  defp parse_files([single_file], _scenario_paths) do
     # Check if the single file path matches test/path/to_test.exs:123, if it does
     # apply "--only line:123" and trim the trailing :123 part.
     {single_file, opts} = ExUnit.Filters.parse_path(single_file)
@@ -266,7 +266,7 @@ defmodule Mix.Tasks.Exkorpion do
     [single_file]
   end
 
-  defp parse_files(files, _test_paths) do
+  defp parse_files(files, _scenario_paths) do
     files
   end
 
@@ -301,8 +301,8 @@ defmodule Mix.Tasks.Exkorpion do
     end
   end
 
-  defp require_test_helper(dir) do
-    file = Path.join(dir, "test_helper.exs")
+  defp require_scenario_helper(dir) do
+    file = Path.join(dir, "scenario_helper.exs")
 
     if File.exists?(file) do
       Code.require_file file
