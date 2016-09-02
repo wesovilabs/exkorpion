@@ -64,13 +64,13 @@ Below you can find some very basic examples of how to use  **Exkorpion**
                     it "sum negative numbers and it should work as expected" do
                       %{
                         given: fn  ->
-                            %{a: -1, b: -2}
+                          %{a: -1, b: -2}
                         end,
                         when: fn ctx ->
-                            %{c: sum(ctx.a, ctx.b)}
+                          %{c: sum(ctx.a, ctx.b)}
                         end,
                         then: fn ctx ->
-                            assert ctx.c === -3
+                          assert ctx.c === -3
                         end
                       }
                     end
