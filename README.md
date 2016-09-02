@@ -110,7 +110,7 @@ end
     
 ## How to run
 
-- Make a **scenarios* directory in your project
+- Make a **scenarios** directory in your project
 - Add files with sufix **_scenario.ex** or **_scenario.exs**
 - Implementing some test as example above.
 - Run  command **MIX_ENV=test mix exkorpion**
@@ -121,7 +121,7 @@ end
 - Improving coding style 
 - Implementing new functionalities.
 - Detecting bugs and fixing them.
-- Waitign for feddback.
+- Waitting for feddback.
     
 
 ## Contributors
