@@ -86,8 +86,8 @@ defmodule Exkorpion do
 
   
   def should(operation, param1, param2) do
-    Logger.info "Line: #{inspect __ENV__.line}"
-    Logger.info "Module: #{inspect __ENV__.module}"
+    #Logger.info "Line: #{inspect __ENV__.line}"
+    #Logger.info "Module: #{inspect __ENV__.module}"
     Exkorpion.Should.should operation, param1, param2
   end
 
