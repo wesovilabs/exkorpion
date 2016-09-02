@@ -21,7 +21,7 @@ defmodule Exkorpion.MathExamplesTest do
     it "does multiple operations depending on vairable input" do
 
       %{
-        with: fn ctx->
+        with: fn ctx ->
         [
           %{param1: ctx.a, param2: 3, result: 15, op: fn a,b -> sum(a,b) end},
           %{param1: 3, param2: -2, result: 5, op: fn a,b -> subs(a,b) end}

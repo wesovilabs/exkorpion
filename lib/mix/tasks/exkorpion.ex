@@ -135,7 +135,7 @@ defmodule Mix.Tasks.Exkorpion do
              stale: :boolean, listen_on_stdin: :boolean]
 
   @cover [output: "cover", tool: Cover]
-
+  @lint false
   @spec run(OptionParser.argv) :: :ok
   def run(args) do
     {opts, files} = OptionParser.parse!(args, strict: @switches)

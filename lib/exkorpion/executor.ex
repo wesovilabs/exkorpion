@@ -4,14 +4,16 @@ defmodule Exkorpion.Executor do
   """
 
   def runTest context, given_, when_, then_ do
-    given_.(context)
+    context
+    |> given_.()
     |> when_.()
     |> then_.()
   end
 
   def runTestMultipleScenarios context, with_, given_, when_, then_ do
     Enum.each with_.(context), fn ctx ->
-      given_.(ctx)
+      ctx
+      |> given_.()
       |> joinCtx(ctx)
       |> joinCtx(context)
       |> when_.()
