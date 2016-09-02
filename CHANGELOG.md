@@ -6,6 +6,8 @@
 	There was not bug detected for previous version.
 
 ### Code Refactoring
+- Applying best coding practice (trying at least XD)
+- Adding credo to run static code analysis.
 
 
 ### Features
