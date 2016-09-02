@@ -121,7 +121,7 @@ end
 - Improving coding style 
 - Implementing new functionalities.
 - Detecting bugs and fixing them.
-- Waitting for feddback.
+- Waiting for feddback.
     
 
 ## Contributors
