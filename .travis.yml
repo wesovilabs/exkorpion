@@ -7,9 +7,9 @@ elixir:
   - 1.3.1
 otp_release:
   - 18.0
-before_script:
-  - mix dialyzer.plt 
+#before_script:
+#  - mix dialyzer.plt 
 script:
   - mix credo
-  - mix dialyzer --halt-exit-status
+  #- mix dialyzer --halt-exit-status
   - MIX_ENV=test mix exkorpion
