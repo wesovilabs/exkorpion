@@ -1,6 +1,6 @@
 # Site settings
-title: *folio
-email: you@example.com
+title: Exkorpion
+email: developer@wesovi.com
 description: > # this means to ignore newlines until "baseurl:"
   A simple, whitespace, helvetica based portfolio theme.
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -11,7 +11,7 @@ github_username:  github_username
 # Build settings
 markdown: kramdown
 
-highlighter: pygments
+rouge: pygments
 
 # Pagination
 paginate: 15
