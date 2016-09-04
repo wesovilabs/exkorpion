@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16a3547e-7056-48fa-b58e-6aa119b6185d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/images/bg01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/brown-papersq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/pojoaque.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/school-book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/CHANGES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/ie/PIE.htc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/README.ru.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/libs/_functions.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/libs/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/libs/_skel.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/libs/_vars.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/agate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/androidstudio.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/arduino-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/arta.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/ascetic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-cave-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-cave-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-dune-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-dune-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-estuary-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-estuary-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-forest-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-forest-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-heath-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-heath-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-lakeside-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-lakeside-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-plateau-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-plateau-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-savanna-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-savanna-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-seaside-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-seaside-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-sulphurpool-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-sulphurpool-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atom-one-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atom-one-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/brown-paper.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/codepen-embed.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/color-brewer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/darcula.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/darkula.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/docco.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/dracula.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/far.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/foundation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/github-gist.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/github.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/github.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/googlecode.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/grayscale.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/gruvbox-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/gruvbox-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/highlight.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/hopscotch.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/ie/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/hybrid.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/idea.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/ie8.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/installation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/ir-black.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.dropotron.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/kimbie.dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/kimbie.light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/magula.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/mono-blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/monokai-sublime.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/monokai.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/obsidian.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/ocean.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/overview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/paraiso-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/paraiso-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/pojoaque.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/purebasic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/qtcreator_dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/qtcreator_light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/railscasts.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/rainbow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/ie/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/school-book.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/skel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/solarized-dark.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/solarized-light.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/sunburst.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow-night-blue.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow-night-bright.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow-night-eighties.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow-night.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/vs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/xcode.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/xt256.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/zenburn.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exkorpion.Error.InvalidStructureError.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exkorpion.Executor.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exkorpion.Server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Exkorpion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Mix.Tasks.Exkorpion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-reference.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app-21f1a20b9e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app-88251e7c81.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/sidebar_items.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon.woff" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
+    <ignored path="exkorpion.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/_build/dev/lib/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/test/lib/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/dev/lib/dialyxir/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/test/lib/dialyxir/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/dev/lib/exdoc/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/test/lib/exdoc/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/dev/lib/exkorpion/ebin/" />
+    <ignored path="$PROJECT_DIR$/_build/test/lib/exkorpion/ebin/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="CLEAR_OUTPUT_DIRECTORY" value="false" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="exkorpion" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="PIE.htc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/ie/PIE.htc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.84813756">
+              <caret line="153" column="101" selection-start-line="153" selection-start-column="101" selection-end-line="153" selection-end-column="101" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="features.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.730769">
+              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="installation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/installation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.974359">
+              <caret line="83" column="75" selection-start-line="83" selection-start-column="75" selection-end-line="83" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/overview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.817073">
+              <caret line="95" column="41" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vs.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/highlight/styles/vs.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lib/exkorpion/util.ex" />
+        <option value="$PROJECT_DIR$/lib/exkorpion/report/markdown_report.ex" />
+        <option value="$PROJECT_DIR$/lib/exkorpion/executor.ex" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/exkorpion_samples/test/math_examples_test.exs" />
+        <option value="$PROJECT_DIR$/exkorpion_samples/mix.exs" />
+        <option value="$PROJECT_DIR$/lib/exkorpion/should.ex" />
+        <option value="$PROJECT_DIR$/lib/exkorpion.ex" />
+        <option value="$PROJECT_DIR$/Exkorpion.html" />
+        <option value="$PROJECT_DIR$/dist/sidebar_items.js" />
+        <option value="$PROJECT_DIR$/dist/app-21f1a20b9e.js" />
+        <option value="$PROJECT_DIR$/assets/css/github.css" />
+        <option value="$PROJECT_DIR$/overview.html" />
+        <option value="$PROJECT_DIR$/features.html" />
+        <option value="$PROJECT_DIR$/installation.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exkorpion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exkorpion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exkorpion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exkorpion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exkorpion" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Elixir External Tools" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets/js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../pocs/scala-spark-article" value="1463110268000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16a3547e-7056-48fa-b58e-6aa119b6185d" name="Default" comment="" />
+      <created>1472482403001</created>
+      <option name="number" value="Default" />
+      <updated>1472482403001</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Apiary Blueprint Manager" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="ReST Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/js/ie/PIE.htc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/github.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.95821726">
+          <caret line="14979" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14979" selection-end-column="0" />
+          <folding>
+            <element signature="e#22562#22799#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/highlight/styles/vs.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.817073">
+          <caret line="95" column="41" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.730769">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/installation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.974359">
+          <caret line="83" column="75" selection-start-line="83" selection-start-column="75" selection-end-line="83" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84813756">
+          <caret line="153" column="101" selection-start-line="153" selection-start-column="101" selection-end-line="153" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/deps/earmark/.iml" filepath="$PROJECT_DIR$/deps/earmark/.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/dialyxir/dialyxir.iml" filepath="$PROJECT_DIR$/deps/dialyxir/dialyxir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/ex_doc/exdoc.iml" filepath="$PROJECT_DIR$/deps/ex_doc/exdoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/exkorpion.iml" filepath="$PROJECT_DIR$/.idea/exkorpion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exkorpion.iml" filepath="$PROJECT_DIR$/exkorpion.iml" />
+    </modules>
+  </component>
+</project>
