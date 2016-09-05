@@ -118,13 +118,6 @@ end
 - Run  command **MIX_ENV=test mix exkorpion**
     
     
-## Project status
-
-- Improving coding style 
-- Implementing new functionalities.
-- Detecting bugs and fixing them.
-- Waiting for feddback.
-    
 
 ## Contributors
 
