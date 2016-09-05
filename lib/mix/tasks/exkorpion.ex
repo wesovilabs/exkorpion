@@ -166,7 +166,7 @@ defmodule Mix.Tasks.Exkorpion do
     cover =
       if opts[:cover] do
         compile_path = Mix.Project.compile_path(project)
-        cover = Keyword.merge(@cover, project[:scenario_coverage] || [])
+        cover = Keyword.merge(@cover,Application.fetch_env!(:exkorpion, :scenario_coverage)|| [])
         cover[:tool].start(compile_path, cover)
       end
 
@@ -189,14 +189,14 @@ defmodule Mix.Tasks.Exkorpion do
     exkorpion_opts = exkorpion_opts(opts)
     ExUnit.configure(exkorpion_opts)
 
-    scenario_paths = project[:scenario_paths] || ["scenarios"]
+    scenario_paths = Application.fetch_env!(:exkorpion, :scenario_paths) || ["scenarios"]
     Enum.each(scenario_paths, &require_scenario_helper(&1))
     ExUnit.configure(merge_helper_opts(exkorpion_opts))
 
     # Finally parse, require and load the files
     scenario_files = parse_files(files, scenario_paths)
-    scenario_pattern = project[:scenario_pattern] || "*_scenario.exs"
-    warn_scenario_pattern = project[:warn_scenario_pattern] || "*_scenario.ex"
+    scenario_pattern = Application.fetch_env!(:exkorpion, :scenario_pattern) || "*_scenario.exs"
+    warn_scenario_pattern = Application.fetch_env!(:exkorpion, :warn_scenario_pattern) || "*_scenario.ex"
 
     matched_scenario_files = Mix.Utils.extract_files(scenario_files, scenario_pattern)
     matched_warn_scenario_files =
