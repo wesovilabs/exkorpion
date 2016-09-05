@@ -4,7 +4,7 @@
 
 # Exkorpion
 
-A full site documentation is gonna be hosted on [Exkorpion site](http://www.wesovilabs.com/exkorpion)
+A full site documentation is gonna be hosted on [Exkorpion site](http://www.wesovilabs.com/exkorpion). Now there is only a draft.
 
 **Exkorpion is a framework that will help developers to write tests in a BDD form.**
 
