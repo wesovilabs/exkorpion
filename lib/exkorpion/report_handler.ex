@@ -1,4 +1,4 @@
-defmodule Exkorpion.MarkdownHandler do
+defmodule Exkorpion.ReportHandler do
   @moduledoc"""
 
   """
@@ -6,17 +6,15 @@ defmodule Exkorpion.MarkdownHandler do
   require Logger
 
   def start do
-    GenServer.start(__MODULE__, [], name: :markdown_handler)
+    GenServer.start(__MODULE__, [], name: :report_handler)
   end
 
   def add(key, description) do
-    Logger.info "add:"
-    GenServer.cast(:markdown_handler, {key,description})
+    GenServer.cast(:report_handler, {key,description})
   end
 
   def output() do
-    Logger.info "Output:"
-    GenServer.call(:markdown_handler, {:output})
+    GenServer.call(:report_handler, {:output})
   end
 
   def handle_cast({:scenario,description}, state) do
@@ -26,7 +24,6 @@ defmodule Exkorpion.MarkdownHandler do
 
 
   def handle_call({:output}, _from, state) do
-    Logger.info "Output:"
   	{:reply,  state, state}
   end
 

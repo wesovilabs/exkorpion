@@ -1,6 +1,6 @@
 defmodule Mix.Tasks.Exkorpion do
 
-  import Exkorpion.MarkdownHandler
+  import Exkorpion.ReportHandler
   require Logger
 
   defmodule Init do
@@ -162,7 +162,7 @@ defmodule Mix.Tasks.Exkorpion do
   @spec run(OptionParser.argv) :: :ok
   def run(args) do
     {opts, files} = OptionParser.parse!(args, strict: @switches)
-    Exkorpion.MarkdownHandler.start
+    Exkorpion.ReportHandler.start
     if opts[:listen_on_stdin] do
       System.at_exit fn _ ->
         IO.gets(:stdio, "")
@@ -244,7 +244,7 @@ defmodule Mix.Tasks.Exkorpion do
         :ok
     end
     Logger.info "Output:"
-    output = Exkorpion.MarkdownHandler.output
+    output = Exkorpion.ReportHandler.output
     Logger.info "#{inspect output}"
   end
 

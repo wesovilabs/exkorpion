@@ -8,7 +8,7 @@ defmodule Exkorpion do
   import ExUnit.Case
   import ExUnit
   import Exkorpion.Server 
-  import Exkorpion.MarkdownHandler
+  import Exkorpion.ReportHandler
 
 
 
@@ -39,7 +39,7 @@ defmodule Exkorpion do
 
     quote do
       Exkorpion.Server.start 
-      Exkorpion.MarkdownHandler.add :scenario, unquote(name)
+      Exkorpion.ReportHandler.add :scenario, unquote(name)
       @exkorpion
       test("scenario #{unquote name}", unquote(options))
     end
