@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a3547e-7056-48fa-b58e-6aa119b6185d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getting-started.html" afterPath="$PROJECT_DIR$/getting-started.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="exkorpion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="getting-started.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getting-started.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getting-started.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35172415">
+            <state vertical-scroll-proportion="-5.0">
               <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3323782">
+              <caret line="113" column="61" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -72,8 +82,8 @@
         <option value="$PROJECT_DIR$/installation.html" />
         <option value="$PROJECT_DIR$/overview.html" />
         <option value="$PROJECT_DIR$/features.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/getting-started.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -272,8 +282,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/getting-started.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35172415">
+        <state vertical-scroll-proportion="-5.0">
           <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3323782">
+          <caret line="113" column="61" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
           <folding />
         </state>
       </provider>
