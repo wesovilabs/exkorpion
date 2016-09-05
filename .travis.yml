@@ -14,4 +14,4 @@ otp_release:
 script:
   - mix credo
   #- mix dialyzer --halt-exit-status
-  - MIX_ENV=test mix exkorpion
+  - mix exkorpion
