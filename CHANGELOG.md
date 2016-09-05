@@ -10,6 +10,7 @@
 ### Features
 - Providing a Exkopion site on [Exkorpion site](http://www.wesovilabs.com/exkorpion)
 - Full integration with ExUnit
+- Add some king of reporting
 
 
 <a name="0.0.1-rc.2"></a>
