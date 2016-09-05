@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a3547e-7056-48fa-b58e-6aa119b6185d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/functional.png" afterPath="$PROJECT_DIR$/images/functional.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/installation.jpg" afterPath="$PROJECT_DIR$/images/installation.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/overview.jpg" afterPath="$PROJECT_DIR$/images/overview.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features.html" afterPath="$PROJECT_DIR$/features.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/overview.html" afterPath="$PROJECT_DIR$/overview.html" />
     </list>
     <ignored path="exkorpion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6850746">
-              <caret line="113" column="69" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
+            <state vertical-scroll-proportion="-0.7924528">
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="features.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="features.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.24359">
-              <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.67765045">
+              <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -81,8 +78,8 @@
       <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.817073">
-              <caret line="95" column="41" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.31707317">
+              <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -123,10 +120,10 @@
         <option value="$PROJECT_DIR$/dist/sidebar_items.js" />
         <option value="$PROJECT_DIR$/dist/app-21f1a20b9e.js" />
         <option value="$PROJECT_DIR$/assets/css/github.css" />
-        <option value="$PROJECT_DIR$/overview.html" />
         <option value="$PROJECT_DIR$/installation.html" />
-        <option value="$PROJECT_DIR$/features.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/overview.html" />
+        <option value="$PROJECT_DIR$/features.html" />
       </list>
     </option>
   </component>
@@ -180,20 +177,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="exkorpion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exkorpion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exkorpion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,14 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.817073">
-          <caret line="95" column="41" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/installation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.974359">
@@ -379,18 +354,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.24359">
-          <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
+        <state vertical-scroll-proportion="-0.7924528">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6850746">
-          <caret line="113" column="69" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.31707317">
+          <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67765045">
+          <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
           <folding />
         </state>
       </provider>

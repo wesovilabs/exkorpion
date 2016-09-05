@@ -145,8 +145,32 @@
 end</code></pre>
                             </p>
                             <p>
-                                <b>- BeforeEach</b>: Different syntax but some functionality than the known <b>setup</b> in ExUnit.
+                                Exkorpion also provides a <b>with</b> word which would allow us to run the same tests but with different input data. Below an example:
+                            </p>
+                            <p>
 
+                                    <pre><i>Example:</i><code class="elixir"> scenario "Testing user authentication works as expected" do
+  it "user is authenticated successfully when credentials are valid" do
+    %{
+      with: fn ctx ->
+        [
+          %{username: "valid@mail.com", password: "no_valid", expected_error: "invalid_credentials"},
+          %{username: "expired@mail.com", password: "s3cr3t", expected_error: "expired_account"},
+          %{username: "valid@mail.com", password: "", expected_error: "invalid_password_format"}
+        ],
+      given: &(%{username: &1.username, password: &1.password})
+      when: &(%{authentication_result: doAuthentication(&1.username, &1.password})
+      then: fn ctx ->
+        assert ctx.authentication_result.message === ctx.expected_error
+      end
+    }
+  end<br/>
+end</code></pre>
+                            </p>
+                            <p>
+                                <b>- BeforeEach</b>: Different syntax but some functionality than the known <b>setup</b> in ExUnit.
+                                By making use of it we can prepare a set of test input data which we will be using in defferent testss in the same scenario.
+                                
                             </p>
 
 
