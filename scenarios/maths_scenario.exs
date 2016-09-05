@@ -17,7 +17,6 @@ defmodule Exkorpion.MathExamplesTest do
       %{a: 12}
     end
 
-
     it "does multiple operations depending on vairable input" do
 
       %{
