@@ -1,5 +1,28 @@
 defmodule Mix.Tasks.Exkorpion do
-  
+
+  import Exkorpion.MarkdownHandler
+  require Logger
+
+  defmodule Init do
+    def run(args) do
+      case Application.fetch_env(:exkorpion, :scenario_paths)  do
+        {:ok, :scenario_paths} -> scenario_paths = :scenario_paths
+        :error  -> scenario_paths = "scenarios"
+      end
+      
+      Mix.shell.info "\n Creating scenarios directory #{inspect scenario_paths}"
+      File.mkdir_p!(scenario_paths)
+      {:ok, file} = File.open "#{scenario_paths}/scenario_helper.exs", [:write]
+      try do
+        IO.binwrite file, "Exkorpion.start()"
+      after
+        File.close(file)
+      end  
+
+    end  
+
+  end
+
   defmodule Cover do
     @moduledoc false
 
@@ -139,7 +162,7 @@ defmodule Mix.Tasks.Exkorpion do
   @spec run(OptionParser.argv) :: :ok
   def run(args) do
     {opts, files} = OptionParser.parse!(args, strict: @switches)
-
+    Exkorpion.MarkdownHandler.start
     if opts[:listen_on_stdin] do
       System.at_exit fn _ ->
         IO.gets(:stdio, "")
@@ -220,6 +243,9 @@ defmodule Mix.Tasks.Exkorpion do
       :noop ->
         :ok
     end
+    Logger.info "Output:"
+    output = Exkorpion.MarkdownHandler.output
+    Logger.info "#{inspect output}"
   end
 
   defp display_warn_scenario_pattern(files, pattern) do

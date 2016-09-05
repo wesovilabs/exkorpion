@@ -9,8 +9,6 @@ defmodule Exkorpion.MathExamplesTest do
     a - b
   end
 
-
-  
   scenario "testing sum operation works as expected" do
  
     beforeEach do

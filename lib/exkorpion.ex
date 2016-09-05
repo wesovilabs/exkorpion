@@ -8,6 +8,7 @@ defmodule Exkorpion do
   import ExUnit.Case
   import ExUnit
   import Exkorpion.Server 
+  import Exkorpion.MarkdownHandler
 
 
 
@@ -38,6 +39,7 @@ defmodule Exkorpion do
 
     quote do
       Exkorpion.Server.start 
+      Exkorpion.MarkdownHandler.add :scenario, unquote(name)
       @exkorpion
       test("scenario #{unquote name}", unquote(options))
     end
@@ -56,7 +58,7 @@ defmodule Exkorpion do
   defmacro it(name, options) do
     quote do
       scenario = unquote(options)
-      value = Exkorpion.Server.get(:a)
+      
       scenario_type = fn
         (%{:with => with_, :given => given_, :when => when_, :then => then_}) -> runTestMultipleScenarios with_, given_, when_, then_
         (%{:given => given_, :when => when_, :then => then_}) -> runTest(given_, when_, then_)
