@@ -1,3 +1,17 @@
+<a name="0.0.?"></a>
+# [0.0.?](https://github.com/wesovilabs/exkorpion/compare/0.0.2-rc.1...0.0.2) (2016-09-??)
+### Bug Fixes
+	There was not bug detected for previous version.
+
+### Code Refactoring
+	None
+
+
+### Features
+- Providing a Exkopion site on [Exkorpion site](http://www.wesovilabs.com/exkorpion)
+- Full integration with ExUnit
+
+
 <a name="0.0.1-rc.2"></a>
 # [0.0.2-rc.1](https://github.com/wesovilabs/exkorpion/compare/0.0.1...0.0.2-rc.1) (2016-09-02)
 

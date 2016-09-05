@@ -4,6 +4,8 @@
 
 # Exkorpion
 
+A full site documentation is gonna be hosted on [Exkorpion site](http://www.wesovilabs.com/exkorpion)
+
 **Exkorpion is a framework that will help developers to write tests in a BDD form.**
 
 ## Installation
