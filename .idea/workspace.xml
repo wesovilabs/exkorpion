@@ -2,141 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16a3547e-7056-48fa-b58e-6aa119b6185d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/images/bg01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/brown-papersq.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pic07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/pojoaque.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/school-book.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/CHANGES.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/ie/PIE.htc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/README.ru.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/libs/_functions.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/libs/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/libs/_skel.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/libs/_vars.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/agate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/androidstudio.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/arduino-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/arta.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/ascetic.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-cave-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-cave-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-dune-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-dune-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-estuary-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-estuary-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-forest-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-forest-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-heath-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-heath-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-lakeside-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-lakeside-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-plateau-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-plateau-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-savanna-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-savanna-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-seaside-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-seaside-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-sulphurpool-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atelier-sulphurpool-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atom-one-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/atom-one-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/brown-paper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/codepen-embed.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/color-brewer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/darcula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/darkula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/docco.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/dracula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/far.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/foundation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/github-gist.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/github.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/github.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/googlecode.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/grayscale.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/gruvbox-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/gruvbox-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/highlight.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/hopscotch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/ie/html5shiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/hybrid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/idea.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/ie8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/ie8.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/installation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/ir-black.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.dropotron.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/kimbie.dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/kimbie.light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/magula.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/sass/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/mono-blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/monokai-sublime.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/monokai.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/obsidian.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/ocean.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/overview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/paraiso-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/paraiso-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/pojoaque.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/purebasic.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/qtcreator_dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/qtcreator_light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/railscasts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/rainbow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/ie/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/school-book.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/skel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/solarized-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/solarized-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/sunburst.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow-night-blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow-night-bright.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow-night-eighties.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow-night.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/tomorrow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/vs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/xcode.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/xt256.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/highlight/styles/zenburn.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Exkorpion.Error.InvalidStructureError.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Exkorpion.Executor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Exkorpion.Server.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Exkorpion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Mix.Tasks.Exkorpion.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-reference.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app-21f1a20b9e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/app-88251e7c81.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/sidebar_items.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/icomoon.woff" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/functional.png" afterPath="$PROJECT_DIR$/images/functional.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/installation.jpg" afterPath="$PROJECT_DIR$/images/installation.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/overview.jpg" afterPath="$PROJECT_DIR$/images/overview.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features.html" afterPath="$PROJECT_DIR$/features.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="exkorpion.iws" />
@@ -182,8 +51,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84813756">
-              <caret line="153" column="101" selection-start-line="153" selection-start-column="101" selection-end-line="153" selection-end-column="101" />
+            <state vertical-scroll-proportion="0.6850746">
+              <caret line="113" column="69" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -192,8 +61,8 @@
       <file leaf-file-name="features.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.730769">
-              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state vertical-scroll-proportion="-6.24359">
+              <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -203,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/installation.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-2.974359">
-              <caret line="83" column="75" selection-start-line="83" selection-start-column="75" selection-end-line="83" selection-end-column="75" />
+              <caret line="109" column="63" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -255,8 +124,8 @@
         <option value="$PROJECT_DIR$/dist/app-21f1a20b9e.js" />
         <option value="$PROJECT_DIR$/assets/css/github.css" />
         <option value="$PROJECT_DIR$/overview.html" />
-        <option value="$PROJECT_DIR$/features.html" />
         <option value="$PROJECT_DIR$/installation.html" />
+        <option value="$PROJECT_DIR$/features.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -502,26 +371,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features.html">
+    <entry file="file://$PROJECT_DIR$/installation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.730769">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        <state vertical-scroll-proportion="-2.974359">
+          <caret line="109" column="63" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/installation.html">
+    <entry file="file://$PROJECT_DIR$/features.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.974359">
-          <caret line="83" column="75" selection-start-line="83" selection-start-column="75" selection-end-line="83" selection-end-column="75" />
+        <state vertical-scroll-proportion="-6.24359">
+          <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84813756">
-          <caret line="153" column="101" selection-start-line="153" selection-start-column="101" selection-end-line="153" selection-end-column="101" />
+        <state vertical-scroll-proportion="0.6850746">
+          <caret line="113" column="69" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
           <folding />
         </state>
       </provider>

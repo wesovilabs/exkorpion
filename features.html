@@ -83,7 +83,7 @@
                     <div id="content">
 
                         <!-- Content -->
-                        <article>
+                        <p>
 
                             <h2>Exkorpion features</h2>
                             <p>As we mentioned on previous guides, Exkorpion is based on BDD syntax.</p>
@@ -91,7 +91,7 @@
                             <h3>What make Exkorpion different</h3>
                             <p>
                                 Often developers claim about the benefits of the functional programming. Would you any time imagine on bring these good things to the test side?
-                                Exkorpion force us to write function for all the steps in our test. Making use of anonymous function Exkorpion achieves a way to make developers
+                                Exkorpion force us to write functions for all the steps in our tests. Making use of anonymous function Exkorpion achieves a way to make developers
                                 think (even more) about functions in a functional programming language.
                             </p>
                             <hr/>
@@ -106,11 +106,16 @@
                                     <li>Help us to think about the tests from a non-programming-lenguage point of view.</li>
                                 </ul>
                                 A scenario must include a brief description about what we want test and contains one or more than one tests.
+
+                            </p>
+                            <p>
+                                <pre><i>Example:</i><code class="elixir"> scenario "Testing user authentication works as expected" do<br/>   it ...<br/><br/>   it ...<br/> end</code></pre>
                             </p>
                             <p>
                                 <b>- It</b>: Some we understand a scenario could be described by more than one case, Exkorpion provide with
                                 a reserved word <b>It</b> that help use to write tests inside a scenario.
                                 We assume a scenario has one case at least.
+                            <pre><i>Example:</i><code class="elixir"> scenario "Testing user authentication works as expected" do<br/>   it "user is authenticated successfully when credentials are valid" do<br/><br/>   end<br/>   it "user authentication fails when credentials are expired" do<br/><br/>   end<br/> end</code></pre>
                             </p>
                             <p>
                                 <b>- Given / When / Then</b>: The use of these <b>words</b> mustn't be associated to writing long features in Gherkin. Actually
@@ -122,6 +127,22 @@
                                 </ul>
                                 So even thinking on a very basic unit tests, such as a sum, we find the three steps:
                                 Given (a=1, b=2), When (c = a + b) and Then (c === 3)
+                            </p>
+                            <p>
+
+                                <pre><i>Example:</i><code class="elixir"> scenario "Testing user authentication works as expected" do
+   it "user is authenticated successfully when credentials are valid" do
+     %{
+       given: fn _ ->
+         %{username: "user@email.com", password: "s3cr3t"}
+       end,
+       when: &(%{authentication_result: doAuthentication(&1.username, &1.password})
+       then: fn ctx ->
+         assert ctx.authentication_result.code === "OK"
+       end
+     }
+   end<br/>
+end</code></pre>
                             </p>
                             <p>
                                 <b>- BeforeEach</b>: Different syntax but some functionality than the known <b>setup</b> in ExUnit.
