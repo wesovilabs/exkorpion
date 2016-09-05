@@ -8,6 +8,7 @@ defmodule Exkorpion.Mixfile do
      name: "Exkorpion",
      description: description,
      source_url: "https://github.com/wesovilabs/exkorpion",
+     preferred_cli_env: ["exkorpion": :test],
      package: package,
      deps: deps]
   end
