@@ -243,9 +243,18 @@ defmodule Mix.Tasks.Exkorpion do
       :noop ->
         :ok
     end
-    Logger.info "Output:"
+    print_resume
+  end
+
+  defp print_resume do
+    #IO.puts (IO.ANSI.clear)
+    IO.puts (IO.ANSI.yellow_background)
+    IO.puts (IO.ANSI.format([:blue, "Exkorpion resume, ", :blue, "world!"], true))
     output = Exkorpion.ReportHandler.output
     Logger.info "#{inspect output}"
+    #Exkorpion.TableFormatter.print_table(output)
+    #IO.puts (IO.ANSI.format([output, :red, :bright, "world!"], true))
+
   end
 
   defp display_warn_scenario_pattern(files, pattern) do

@@ -42,6 +42,7 @@ defmodule Exkorpion do
       Exkorpion.ReportHandler.add :scenario, unquote(name)
       @exkorpion
       test("scenario #{unquote name}", unquote(options))
+      
     end
   end
 
@@ -58,7 +59,7 @@ defmodule Exkorpion do
   defmacro it(name, options) do
     quote do
       scenario = unquote(options)
-      
+      Exkorpion.ReportHandler.add :test, unquote(name)
       scenario_type = fn
         (%{:with => with_, :given => given_, :when => when_, :then => then_}) -> runTestMultipleScenarios with_, given_, when_, then_
         (%{:given => given_, :when => when_, :then => then_}) -> runTest(given_, when_, then_)
@@ -67,9 +68,12 @@ defmodule Exkorpion do
 
       try do
          scenario_type.(scenario[:do])
+         Exkorpion.ReportHandler.add :result, "success"
       rescue
-        e in ExUnit.AssertionError ->  raise e        
+        e in ExUnit.AssertionError ->  Exkorpion.ReportHandler.add :result, "error"; raise e        
         e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
+      after
+        Exkorpion.ReportHandler.add :test_end, "."  
       end
     end
   end
