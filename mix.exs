@@ -3,7 +3,7 @@ defmodule Exkorpion.Mixfile do
 
   def project do
     [app: :exkorpion,
-     version: "0.0.2-rc.1",
+     version: "0.0.2-rc.2",
      elixir: "~> 1.3",
      name: "Exkorpion",
      description: description,
