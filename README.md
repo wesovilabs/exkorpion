@@ -16,7 +16,7 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
 
     ```elixir
     def deps do
-      [{:exkorpion, "~> 0.0.2-rc.1"}]
+      [{:exkorpion, "~> 0.0.2-rc.2"}]
     end
     ```
 
