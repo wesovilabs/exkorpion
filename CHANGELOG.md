@@ -1,19 +1,21 @@
-<a name="0.0.?"></a>
-# [0.0.?](https://github.com/wesovilabs/exkorpion/compare/0.0.2-rc.1...0.0.2) (2016-09-??)
+<a name="0.0.2-rc.2"></a>
+# [0.0.2-rc.2](https://github.com/wesovilabs/exkorpion/compare/0.0.2-rc.1...0.0.2-rc.2) (2016-09-07)
 ### Bug Fixes
 	There was not bug detected for previous version.
 
 ### Code Refactoring
 	None
 
-
 ### Features
 - Providing a Exkopion site on [Exkorpion site](http://www.wesovilabs.com/exkorpion)
 - Full integration with ExUnit
-- Add some king of reporting
+- Add table resume after tests are executed
 
 
-<a name="0.0.1-rc.2"></a>
+## TODO
+- Re-factor code (Very mandatory for next release)
+
+<a name="0.0.2-rc.1"></a>
 # [0.0.2-rc.1](https://github.com/wesovilabs/exkorpion/compare/0.0.1...0.0.2-rc.1) (2016-09-02)
 
 
