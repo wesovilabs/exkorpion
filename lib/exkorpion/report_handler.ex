@@ -24,28 +24,29 @@ defmodule Exkorpion.ReportHandler do
       :result -> process_result(state, description)
       _ ->  state
     end
-    Logger.info "new state: #{inspect new_state}"
-    {:noreply, new_state }
+    {:noreply, new_state}
   end
 
   defp process_test state,description do
-    current_scenario = Enum.at(state, -1)
-        scenario_tests = elem(current_scenario,1)
-        new_scenario_tests = scenario_tests ++ [{description,:result}]
-        Enum.slice(state,0..Enum.count(state)-1) ++ [{elem(current_scenario,0),new_scenario_tests}]
+    scenarios_length = Enum.count(state)
+    {scenarios, current_scenario} = Enum.split(state, scenarios_length - 1)
+    current_scenario = Enum.at(current_scenario,0)    
+    scenario_tests = elem(current_scenario,1)
+    new_scenario_tests = scenario_tests ++ [{description,:result}]
+    scenarios ++ [{elem(current_scenario,0),new_scenario_tests}]
   end
 
   defp process_result state, description do
     scenarios_length = Enum.count(state)
-          {scenarios, current_scenario} = Enum.split(state, scenarios_length-1)
-          current_scenario = Enum.at(current_scenario,0)
-          current_scenario_tests = elem(current_scenario,1)
-          tests_length = Enum.count(current_scenario_tests)
-          {current_scenario_tests, current_scenario_current_test} = Enum.split(current_scenario_tests,tests_length-1)
-          current_scenario_current_test = Enum.at(current_scenario_current_test,0)
-          updated_current_scenario_current_test = {elem(current_scenario_current_test,0),description}
-          updated_scenario = {elem(current_scenario,0), current_scenario_tests ++[updated_current_scenario_current_test]}
-          scenarios ++ [updated_scenario]
+    {scenarios, current_scenario} = Enum.split(state, scenarios_length - 1)
+    current_scenario = Enum.at(current_scenario,0)
+    current_scenario_tests = elem(current_scenario,1)
+    tests_length = Enum.count(current_scenario_tests)
+    {current_scenario_tests, current_scenario_current_test} = Enum.split(current_scenario_tests,tests_length - 1)
+    current_scenario_current_test = Enum.at(current_scenario_current_test,0)
+    updated_current_scenario_current_test = {elem(current_scenario_current_test,0),description}
+    updated_scenario = {elem(current_scenario,0), current_scenario_tests ++ [updated_current_scenario_current_test]}
+    scenarios ++ [updated_scenario]
   end
 
 
