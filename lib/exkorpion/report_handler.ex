@@ -34,6 +34,7 @@ defmodule Exkorpion.ReportHandler do
     scenario_tests = elem(current_scenario,1)
     new_scenario_tests = scenario_tests ++ [{description,:result}]
     scenarios ++ [{elem(current_scenario,0),new_scenario_tests}]
+
   end
 
   defp process_result state, description do

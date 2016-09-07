@@ -42,7 +42,7 @@ defmodule Exkorpion do
       Exkorpion.ReportHandler.add :scenario, unquote(name)
       @exkorpion
       test("scenario #{unquote name}", unquote(options))
-      
+
     end
   end
 
@@ -65,15 +65,12 @@ defmodule Exkorpion do
         (%{:given => given_, :when => when_, :then => then_}) -> runTest(given_, when_, then_)
         true -> raise %Exkorpion.Error.InvalidStructureError{}
       end
-
       try do
          scenario_type.(scenario[:do])
          Exkorpion.ReportHandler.add :result, "success"
       rescue
         e in ExUnit.AssertionError ->  Exkorpion.ReportHandler.add :result, "error"; raise e        
         e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
-      after
-        Exkorpion.ReportHandler.add :test_end, "."  
       end
     end
   end
