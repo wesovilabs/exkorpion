@@ -7,7 +7,7 @@
 	None
 
 ### Features
-- Providing a Exkopion site on [Exkorpion site](http://www.wesovilabs.com/exkorpion)
+- Providing a Exkopion site on [Exkorpion site](http://www.wesovilabs.com/exkorpion), still in draft
 - Full integration with ExUnit
 - Add table resume after tests are executed
 
