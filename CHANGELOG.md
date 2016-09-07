@@ -13,7 +13,7 @@
 
 
 ## TODO
-- Re-factor code (Very mandatory for next release)
+- Re-factor code (Very mandatory for next release), Specially function print_resume in task exkorpion.
 
 <a name="0.0.2-rc.1"></a>
 # [0.0.2-rc.1](https://github.com/wesovilabs/exkorpion/compare/0.0.1...0.0.2-rc.1) (2016-09-02)
