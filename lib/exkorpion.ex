@@ -37,15 +37,21 @@ defmodule Exkorpion do
 
   defmacro scenario(name, options) do
 
+    block = quote do 
+      unquote options
+    end
+
+    tests_in_scenario = block
+    |> Macro.to_string
+    |> (fn text -> Regex.scan ~r/it\((.)+\"/, text end).()
+    |> (fn list -> Enum.map(list, fn sub_list -> "it(" <> definition  =  Enum.at(sub_list,0); {String.replace(definition,"\"",""), :result} end) end).()
+    
     quote do
       Exkorpion.Server.start 
-      Exkorpion.ReportHandler.add :scenario, unquote(name)
-      @exkorpion
+      Exkorpion.ReportHandler.add_scenario_and_tests  unquote(name), unquote(tests_in_scenario)
       test("scenario #{unquote name}", unquote(options))
-
     end
   end
-
 
   defmacro beforeEach(options) do
     setup = 
@@ -58,20 +64,22 @@ defmodule Exkorpion do
 
   defmacro it(name, options) do
     quote do
-      scenario = unquote(options)
-      Exkorpion.ReportHandler.add :test, unquote(name)
+      test = unquote(options)
+
+
       scenario_type = fn
         (%{:with => with_, :given => given_, :when => when_, :then => then_}) -> runTestMultipleScenarios with_, given_, when_, then_
         (%{:given => given_, :when => when_, :then => then_}) -> runTest(given_, when_, then_)
         true -> raise %Exkorpion.Error.InvalidStructureError{}
       end
+      
       try do
-         scenario_type.(scenario[:do])
-         Exkorpion.ReportHandler.add :result, "success"
-      rescue
-        e in ExUnit.AssertionError ->  Exkorpion.ReportHandler.add :result, "error"; raise e        
-        e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
-      end
+          scenario_type.(test[:do])
+          Exkorpion.ReportHandler.add_test_and_result unquote(name), "success"
+        rescue
+          e in ExUnit.AssertionError ->  Exkorpion.ReportHandler.add_test_and_result unquote(name), "error"; raise e        
+          e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
+        end
     end
   end
 
@@ -85,9 +93,9 @@ defmodule Exkorpion do
 
 
   def run args do
-    #ExUnit.configure(exclude: [pending: true])
-    #ExUnit.configure(include: [scenario: true])
-    
+    ExUnit.configure(exclude: [pending: true])
+    ExUnit.configure(include: [scenario: true])
+    ExUnit.run args
   end
 
 

@@ -9,47 +9,33 @@ defmodule Exkorpion.ReportHandler do
     GenServer.start(__MODULE__, [], name: :report_handler)
   end
 
-  def add(key, description) do
-    GenServer.cast(:report_handler, {key,description})
+
+  def add_scenario_and_tests(scenario, tests) do
+    GenServer.cast(:report_handler, {:scenario_with_tests, scenario, tests})
+  end
+
+  def add_test_and_result(test, result) do
+    GenServer.cast(:report_handler, {:test_with_result, test, result})
   end
 
   def output() do
     GenServer.call(:report_handler, {:output})
   end
 
-  def handle_cast({key,description}, state) do
-    new_state = case key do
-      :scenario -> state ++ [{description, []}]
-      :test -> process_test state, description
-      :result -> process_result(state, description)
-      _ ->  state
-    end
+  def handle_cast({:scenario_with_tests, scenario, tests}, state) do
+    {:noreply,state ++ [{scenario, tests}]}
+  end
+
+  def handle_cast({:test_with_result, test, result}, state) do
+    scenario_list = Enum.filter(state, fn(scenario)-> Enum.member?(elem(Enum.unzip(elem(scenario,1)),0),test) end)
+    scenario_detail =Enum.at(scenario_list,0)
+    result_ele = elem(scenario_detail,1)
+    stable_tests = Enum.filter(result_ele, fn(t) -> (elem(t,0) !== test) end)
+    tests = stable_tests ++[{test, result}]
+    stable_scenarios = Enum.filter(state, fn(scenario)-> (elem(scenario,0) != elem(scenario_detail,0)) end)
+    new_state =stable_scenarios ++ [{elem(scenario_detail,0), tests}]
     {:noreply, new_state}
   end
-
-  defp process_test state,description do
-    scenarios_length = Enum.count(state)
-    {scenarios, current_scenario} = Enum.split(state, scenarios_length - 1)
-    current_scenario = Enum.at(current_scenario,0)    
-    scenario_tests = elem(current_scenario,1)
-    new_scenario_tests = scenario_tests ++ [{description,:result}]
-    scenarios ++ [{elem(current_scenario,0),new_scenario_tests}]
-
-  end
-
-  defp process_result state, description do
-    scenarios_length = Enum.count(state)
-    {scenarios, current_scenario} = Enum.split(state, scenarios_length - 1)
-    current_scenario = Enum.at(current_scenario,0)
-    current_scenario_tests = elem(current_scenario,1)
-    tests_length = Enum.count(current_scenario_tests)
-    {current_scenario_tests, current_scenario_current_test} = Enum.split(current_scenario_tests,tests_length - 1)
-    current_scenario_current_test = Enum.at(current_scenario_current_test,0)
-    updated_current_scenario_current_test = {elem(current_scenario_current_test,0),description}
-    updated_scenario = {elem(current_scenario,0), current_scenario_tests ++ [updated_current_scenario_current_test]}
-    scenarios ++ [updated_scenario]
-  end
-
 
   def handle_call({:output}, _from, state) do
   	{:reply,  state, state}

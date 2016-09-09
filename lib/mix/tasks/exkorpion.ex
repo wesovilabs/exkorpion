@@ -258,12 +258,10 @@ defmodule Mix.Tasks.Exkorpion do
     IO.puts ("|                   |")
     IO.puts ("---------------------")
     output = Exkorpion.ReportHandler.output
-    
     Enum.each(output, fn({scenario, value}) ->
       hr = for _ <- 1..(String.length(scenario)+4), do: "-"
       IO.puts (IO.ANSI.clear_line)
       IO.puts "#{hr}"
-      
       IO.puts (IO.ANSI.format([:yellow, "| #{scenario} |"], true))
       IO.puts "#{hr}"
       if length(value) >0 do
@@ -287,8 +285,6 @@ defmodule Mix.Tasks.Exkorpion do
             |> IO.ANSI.format
             |> IO.puts
           end
-          
-          
           IO.puts "   #{hr}#{hr2}"
         end)
       end  
