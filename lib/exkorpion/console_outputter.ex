@@ -15,7 +15,7 @@ defmodule Exkorpion.ConsoleOutputter do
       hr = for _ <- 1..(String.length(scenario)+4), do: "-"
       IO.puts (IO.ANSI.clear_line)
       IO.puts "#{hr}"
-      IO.puts (IO.ANSI.format([:yellow, "| #{scenario} |"], true))
+      IO.puts (IO.ANSI.format([:blue, "| #{scenario} |"], true))
       IO.puts "#{hr}"
       if length(value) >0 do
         {tests_description, tests_results} = Enum.unzip(value)
@@ -35,15 +35,6 @@ defmodule Exkorpion.ConsoleOutputter do
           |> IO.ANSI.format
           |> IO.puts
           IO.puts "   #{hr}#{hr2}"
-          if value_text == "error" do
-          	error_code =  Macro.to_string(value.expr)
-          	IO.puts (IO.ANSI.clear_line)
-          	IO.puts (IO.ANSI.format([:red, "      #{value.message}"]))
-          	IO.puts (IO.ANSI.clear_line)
-          	IO.puts (IO.ANSI.format([:white, "      code: ", :red, "#{error_code}"]))
-          	IO.puts (IO.ANSI.format([:white, "      lhs:  ", :red, "#{value.left}"]))
-          	IO.puts (IO.ANSI.format([:white, "      rhs:  ", :red, "#{value.right}"]))
-          end
         end)
       end  
 
@@ -58,16 +49,22 @@ defmodule Exkorpion.ConsoleOutputter do
   	end		
   end
 
+  defp result_to_message(result) when  is_atom(result) do
+  	"skipped"	
+  end
+
   defp result_to_message(result)  do
-  	"error"
+	"error"	
   end
 
   defp color_by_status(status) do
-    if(status === "success") do
-      :green
-    else
-      :red  
-    end
+  	output_color = case status do
+  		"success" -> :green
+  		"error" -> :red
+  		"skipped" -> :yellow
+  		true -> :red
+  	end
+  	output_color
   end
 
 end

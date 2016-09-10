@@ -21,7 +21,7 @@ defmodule Exkorpion.MathExamplesDuplicatedTest do
         given: &(%{a: &1.a, b: 3}),
         when: &(%{c: &1.a + &1.b}),
         then: fn ctx ->
-          assert ctx.c === 13
+          assert ctx.c === 11
         end
       }
     end
@@ -37,7 +37,7 @@ defmodule Exkorpion.MathExamplesDuplicatedTest do
     end
 
 
-    
+
     it "does multiple operations depending on vairable input 3" do
 
       %{
