@@ -1,21 +1,23 @@
 defmodule Exkorpion.ConsoleOutputter do
-	
+
+  @error "error"
+  @skipped "skipped"
+  @success "success"
   
   @lint false
   ## Just playing this need a very very very BIG re-factor I know it's extremely bad code so far.
   def print_resume do
     IO.puts (IO.ANSI.clear_line)
+    IO.puts (IO.ANSI.clear_line)
     IO.puts ("---------------------")
-    IO.puts ("|                   |")
-    IO.puts (IO.ANSI.format([:cyan, "| Exkorpion resume  |"], true))
-    IO.puts ("|                   |")
+    IO.puts (IO.ANSI.format([:white, "| Exkorpion resume  |"], true))
     IO.puts ("---------------------")
     output = Exkorpion.ReportHandler.output
     Enum.each(output, fn({scenario, value}) ->
       hr = for _ <- 1..(String.length(scenario)+4), do: "-"
       IO.puts (IO.ANSI.clear_line)
       IO.puts "#{hr}"
-      IO.puts (IO.ANSI.format([:blue, "| #{scenario} |"], true))
+      IO.puts (IO.ANSI.format([:cyan, "| #{scenario} |"], true))
       IO.puts "#{hr}"
       if length(value) >0 do
         {tests_description, tests_results} = Enum.unzip(value)
@@ -43,25 +45,25 @@ defmodule Exkorpion.ConsoleOutputter do
 
   defp result_to_message(result) when  is_number(result) do
   	if(result === 0) do
-  		"success"
+  		@success
   	else
-  		"error"		
+  		@error
   	end		
   end
 
   defp result_to_message(result) when  is_atom(result) do
-  	"skipped"	
+  	@skipped
   end
 
   defp result_to_message(result)  do
-	"error"	
+	@error
   end
 
   defp color_by_status(status) do
   	output_color = case status do
-  		"success" -> :green
-  		"error" -> :red
-  		"skipped" -> :yellow
+  		@success -> :green
+  		@error -> :red
+  		@skipped -> :yellow
   		true -> :red
   	end
   	output_color
