@@ -37,6 +37,7 @@ defmodule Exkorpion.MathExamplesDuplicatedTest do
     end
 
 
+    
     it "does multiple operations depending on vairable input 3" do
 
       %{

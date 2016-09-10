@@ -1,22 +1,22 @@
 defmodule Mix.Tasks.Exkorpion do
 
-  import Exkorpion.ReportHandler
+  alias Exkorpion.ConsoleOutputter
   require Logger
 
 
   defmodule Init do
     @moduledoc false
-    def run(args) do
-      case Application.fetch_env(:exkorpion, :scenario_paths)  do
-        {:ok, :scenario_paths} -> scenario_paths = :scenario_paths
-        :error  -> scenario_paths = "scenarios"
+    def run(_) do
+      scenario_paths = case Application.fetch_env(:exkorpion, :scenario_paths)  do
+        {:ok, :scenario_paths} -> :scenario_paths
+        :error  -> "scenarios"
       end
       
-      Mix.shell.info "\n Creating scenarios directory #{inspect scenario_paths}"
+      Mix.shell.info "ExUnit.configure(exclude: [pending: true])\nExUnit.configure(include: [scenario: true])\n Creating scenarios directory #{inspect scenario_paths}"
       File.mkdir_p!(scenario_paths)
       {:ok, file} = File.open "#{scenario_paths}/scenario_helper.exs", [:write]
       try do
-        IO.binwrite file, "Exkorpion.start()"
+        IO.binwrite file, "  \nExkorpion.start()"
       after
         File.close(file)
       end  
@@ -163,7 +163,11 @@ defmodule Mix.Tasks.Exkorpion do
   @lint false
   @spec run(OptionParser.argv) :: :ok
   def run(args) do
+
     {opts, files} = OptionParser.parse!(args, strict: @switches)
+
+    
+
     Exkorpion.ReportHandler.start
     if opts[:listen_on_stdin] do
       System.at_exit fn _ ->
@@ -214,21 +218,33 @@ defmodule Mix.Tasks.Exkorpion do
     exkorpion_opts = exkorpion_opts(opts)
     ExUnit.configure(exkorpion_opts)
 
-    scenario_paths = Application.fetch_env!(:exkorpion, :scenario_paths) || ["scenarios"]
+    scenario_paths = case Application.fetch_env(:exkorpion, :scenario_paths)  do
+        {:ok, :scenario_paths} -> :scenario_paths
+        :error  -> ["scenarios"]
+    end
+
     Enum.each(scenario_paths, &require_scenario_helper(&1))
     ExUnit.configure(merge_helper_opts(exkorpion_opts))
 
     # Finally parse, require and load the files
     scenario_files = parse_files(files, scenario_paths)
-    scenario_pattern = Application.fetch_env!(:exkorpion, :scenario_pattern) || "*_scenario.exs"
-    warn_scenario_pattern = Application.fetch_env!(:exkorpion, :warn_scenario_pattern) || "*_scenario.ex"
+    
+
+    scenario_pattern = case Application.fetch_env(:exkorpion, :scenario_pattern)  do
+        {:ok, :scenario_pattern} -> :scenario_pattern
+        :error  -> "*_scenario.exs"
+    end
+
+    warn_scenario_pattern = case Application.fetch_env(:exkorpion, :warn_scenario_pattern)  do
+        {:ok, :warn_scenario_pattern} ->  :warn_scenario_pattern
+        :error  ->  "*_scenario.ex"
+    end
+
+    
 
     matched_scenario_files = Mix.Utils.extract_files(scenario_files, scenario_pattern)
-    matched_warn_scenario_files =
-      Mix.Utils.extract_files(scenario_files, warn_scenario_pattern) -- matched_scenario_files
-
+    matched_warn_scenario_files = Mix.Utils.extract_files(scenario_files, warn_scenario_pattern) -- matched_scenario_files
     display_warn_scenario_pattern(matched_warn_scenario_files, scenario_pattern)
-
     case CT.require_and_run(files, matched_scenario_files, scenario_paths, opts) do
       {:ok, %{failures: failures}} ->
         cover && cover.()
@@ -245,51 +261,7 @@ defmodule Mix.Tasks.Exkorpion do
       :noop ->
         :ok
     end
-    print_resume
-  end
-
-  @lint false
-  ## Just playing this need a very very very BIG re-factor I know it's extremely bad code so far.
-  defp print_resume do
-    IO.puts (IO.ANSI.clear_line)
-    IO.puts ("---------------------")
-    IO.puts ("|                   |")
-    IO.puts (IO.ANSI.format([:cyan, "| Exkorpion resume  |"], true))
-    IO.puts ("|                   |")
-    IO.puts ("---------------------")
-    output = Exkorpion.ReportHandler.output
-    Enum.each(output, fn({scenario, value}) ->
-      hr = for _ <- 1..(String.length(scenario)+4), do: "-"
-      IO.puts (IO.ANSI.clear_line)
-      IO.puts "#{hr}"
-      IO.puts (IO.ANSI.format([:yellow, "| #{scenario} |"], true))
-      IO.puts "#{hr}"
-      if length(value) >0 do
-        {tests_description, tests_results} = Enum.unzip(value)
-        ordered_list= Enum.sort(tests_description,&(String.length(&1) > String.length(&2)))
-        longest_test = Enum.at(ordered_list,0)
-        max_length = String.length(longest_test) +3
-        
-        hr = for _ <- 1..max_length+3, do: "-"
-        hr2 = for _ <- 1..12, do: "-"
-        Enum.each(value, fn({key,value})->
-          IO.puts "   #{hr}#{hr2}"
-          text = String.pad_trailing(key,max_length-1)
-          text2 = String.pad_trailing(value,9)
-          if(value === "success") do
-            [:green, "   | #{text} | #{text2} |"]
-            |> IO.ANSI.format
-            |> IO.puts
-          else
-            [:red, "   | #{text} | #{text2} |"]
-            |> IO.ANSI.format
-            |> IO.puts
-          end
-          IO.puts "   #{hr}#{hr2}"
-        end)
-      end  
-
-    end)
+    ConsoleOutputter.print_resume
   end
 
   defp display_warn_scenario_pattern(files, pattern) do

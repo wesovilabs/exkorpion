@@ -4,11 +4,7 @@ defmodule Exkorpion do
   """
 
   require Logger
-  import Exkorpion.Executor
   import ExUnit.Case
-  import ExUnit
-  import Exkorpion.Server 
-  import Exkorpion.ReportHandler
 
 
 
@@ -75,9 +71,9 @@ defmodule Exkorpion do
       
       try do
           scenario_type.(test[:do])
-          Exkorpion.ReportHandler.add_test_and_result unquote(name), "success"
+          Exkorpion.ReportHandler.add_test_and_result unquote(name), 0
         rescue
-          e in ExUnit.AssertionError ->  Exkorpion.ReportHandler.add_test_and_result unquote(name), "error"; raise e        
+          e in ExUnit.AssertionError ->  Exkorpion.ReportHandler.add_test_and_result unquote(name), e #; raise e        
           e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
         end
     end
@@ -91,12 +87,9 @@ defmodule Exkorpion do
 
   end
 
+  
 
-  def run args do
-    ExUnit.configure(exclude: [pending: true])
-    ExUnit.configure(include: [scenario: true])
-    ExUnit.run args
-  end
+  
 
 
 end

@@ -1,6 +1,6 @@
 defmodule Exkorpion.ReportHandler do
   @moduledoc"""
-
+  Report Handler GenServer
   """
   use GenServer
   require Logger
