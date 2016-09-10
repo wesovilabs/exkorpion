@@ -1,5 +1,8 @@
 defmodule Exkorpion.ConsoleOutputter do
 
+  @moduledoc"""
+  The purpose of this module is display by console the resume for the scenarios execution.
+  """
   @error "error"
   @skipped "skipped"
   @success "success"
@@ -44,7 +47,7 @@ defmodule Exkorpion.ConsoleOutputter do
   end
 
   defp result_to_message(result) when  is_number(result) do
-  	if(result === 0) do
+  	if result === 0 do
   		@success
   	else
   		@error
@@ -55,9 +58,7 @@ defmodule Exkorpion.ConsoleOutputter do
   	@skipped
   end
 
-  defp result_to_message(_)  do
-	@error
-  end
+  defp result_to_message(_) do @error end
 
   defp color_by_status(status) do
   	output_color = case status do
