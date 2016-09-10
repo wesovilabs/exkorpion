@@ -55,7 +55,7 @@ defmodule Exkorpion.ConsoleOutputter do
   	@skipped
   end
 
-  defp result_to_message(result)  do
+  defp result_to_message(_)  do
 	@error
   end
 
