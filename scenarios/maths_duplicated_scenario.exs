@@ -21,7 +21,7 @@ defmodule Exkorpion.MathExamplesDuplicatedTest do
         given: &(%{a: &1.a, b: 3}),
         when: &(%{c: &1.a + &1.b}),
         then: fn ctx ->
-          assert ctx.c === 11
+          assert ctx.c === 13
         end
       }
     end
@@ -43,7 +43,7 @@ defmodule Exkorpion.MathExamplesDuplicatedTest do
       %{
         with: fn ctx ->
         [
-          %{param1: ctx.a, param2: 3, result: 15, op: fn a,b -> sum(a,b) end},
+          %{param1: ctx.a, param2: 3, result: 13, op: fn a,b -> sum(a,b) end},
           %{param1: 3, param2: -2, result: 5, op: fn a,b -> subs(a,b) end}
         ]
         end,

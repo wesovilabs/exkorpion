@@ -16,7 +16,7 @@ defmodule Mix.Tasks.Exkorpion do
       File.mkdir_p!(scenario_paths)
       {:ok, file} = File.open "#{scenario_paths}/scenario_helper.exs", [:write]
       try do
-        IO.binwrite file, "  \nExkorpion.start()"
+        IO.binwrite file, "  \nExUnit.start()"
       after
         File.close(file)
       end  

@@ -30,7 +30,6 @@ defmodule Exkorpion.MathExamplesTest do
         when: &(%{c: &1.op.(&1.a ,&1.b)}),
         then: fn ctx ->
           assert ctx.c === ctx.result
-          assert 1 === "a"
         end
       }
     end

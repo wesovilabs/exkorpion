@@ -18,18 +18,12 @@ defmodule Exkorpion do
       import Logger
       import ExUnit.Callbacks, except: [setup: 1, setup: 2]
 
-      def runTest  given_, when_, then_ do
-        Exkorpion.Executor.runTest Exkorpion.Server.get, given_, when_, then_
-      end
-
-      def runTestMultipleScenarios with_, given_, when_, then_ do
-        Exkorpion.Executor.runTestMultipleScenarios Exkorpion.Server.get, with_, given_, when_, then_
-      end
-
     end
 
     [definition]
   end
+
+  
 
   defmacro scenario(name, options) do
 
@@ -58,23 +52,21 @@ defmodule Exkorpion do
     [setup]
   end
 
+
+  defp step()
+
   defmacro it(name, options) do
     quote do
       test = unquote(options)
-
-
-      scenario_type = fn
-        (%{:with => with_, :given => given_, :when => when_, :then => then_}) -> runTestMultipleScenarios with_, given_, when_, then_
-        (%{:given => given_, :when => when_, :then => then_}) -> runTest(given_, when_, then_)
-        true -> raise %Exkorpion.Error.InvalidStructureError{}
-      end
       
       try do
-          scenario_type.(test[:do])
+          var_with =  Map.get(test[:do], :with)
+          var_given =  Map.get(test[:do], :given, fn _ -> %{} end)
+          Exkorpion.Executor.run Exkorpion.Server.get, var_with, var_given, test[:do].when, test[:do].then
           Exkorpion.ReportHandler.add_test_and_result unquote(name), 0
         rescue
           e in ExUnit.AssertionError ->  Exkorpion.ReportHandler.add_test_and_result unquote(name), e; raise e        
-          e in BadFunctionError -> raise %Exkorpion.Error.InvalidStructureError{}
+          e in BadFunctionError -> Logger.info "#{inspect e}" ; raise %Exkorpion.Error.InvalidStructureError{}
         end
     end
   end
