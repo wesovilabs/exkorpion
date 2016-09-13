@@ -59,7 +59,6 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
       scenario "testing sum operation works as expected" do
 
-
          it "sum positive numbers works as expected" do
 
          end
