@@ -48,15 +48,17 @@ In case of you don't have a elixir environment ready to code, please have a look
 
 As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
-**Scenario**:  A scenario groups multiple cases that test a functionality works as expected. By using scenario we achieve the below:
+**scenario**:  A scenario groups multiple cases that test a functionality works as expected. By using scenario we achieve the below:
 
   - Better documentation for other developers.
   - Test are better organized and structured
   - Working under an agile methodology we can match scenarios to acceptance criteria
 
+**it**: Exkorpion provide with a reserved word It to represent any of the cases inside a scenario.
+
 
   Example:
-  
+
     ```elixir
 
       scenario "testing sum operation works as expected" do
