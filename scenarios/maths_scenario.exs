@@ -57,7 +57,7 @@ defmodule Exkorpion.MathExamplesTest do
         given: &(%{a: &1.a, b: -2}),
         when: &(%{c: sum(&1.a ,&1.b)}),
         then: fn ctx ->
-          assert ctx.c === 9
+          assert ctx.c === 8
         end
       }
     end
