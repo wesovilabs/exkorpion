@@ -4,9 +4,7 @@
 
 # Exkorpion
 
-A full site documentation is gonna be hosted on [Exkorpion site](http://www.wesovilabs.com/exkorpion). Now there is only a draft.
-
-**Exkorpion is a framework that will help developers to write tests in a BDD form.**
+**An Elixir framework to do testing in a BDD way**
 
 ## Installation
 
@@ -16,7 +14,7 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
 
     ```elixir
     def deps do
-      [{:exkorpion, "~> 0.0.2-rc.2"}]
+      [{:exkorpion, "~> 0.0.2"}]
     end
     ```
 
@@ -27,6 +25,13 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
       [applications: [:exkorpion]]
     end
     ```
+
+  In case ofy ou don't have a elixir environment ready please have a look at the below links:
+
+  - [Elixir installation](http://elixir-lang.org/install.html)
+  - [Mix introduction](http://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html)
+  - [Mix dependencies](https://hex.pm/docs/usage)
+
 
 ## Getting started with Exkorpion
 
