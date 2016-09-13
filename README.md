@@ -26,7 +26,7 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
     end
     ```
 
-  In case ofy ou don't have a elixir environment ready please have a look at the below links:
+In case ofy ou don't have a elixir environment ready please have a look at the below links:
 
   - [Elixir installation](http://elixir-lang.org/install.html)
   - [Mix introduction](http://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html)
