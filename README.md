@@ -58,9 +58,9 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
 
   Example:
-  
 
-    ```elixir
+
+  ```elixir
 
       scenario "testing sum operation works as expected" do
 
@@ -73,7 +73,7 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
          end
 
       end
-    ```
+  ```
 
 
 Below you can find some very basic examples of how to use  **Exkorpion**
