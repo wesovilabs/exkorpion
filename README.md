@@ -38,7 +38,10 @@ In case of you don't have a elixir environment ready to code, please have a look
 
   - It is based on a functional syntax, organization our tests steps by anonymous functions.
 
+  - It is not coupled to any other framework.
 
+
+## Getting started
 
 
 
