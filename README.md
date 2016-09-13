@@ -54,6 +54,9 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
   - Test are better organized and structured
   - Working under an agile methodology we can match scenarios to acceptance criteria
 
+
+  Example:
+  
     ```elixir
 
       scenario "testing sum operation works as expected" do
