@@ -76,6 +76,10 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
   ```
 
 
+**given/when/then**: These word are the ones that provide us with s BDD syntax. Actually even when we write some unit tests we are really thinking about it.
+
+
+
 Below you can find some very basic examples of how to use  **Exkorpion**
 
 
