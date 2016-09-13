@@ -121,13 +121,13 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
     end
   ```
 
-**beforeEach**: Before each will be inside of a scenario and provices with a reusable set of data for our tests.
+**before_each**: Before each will be inside of a scenario and provices with a reusable set of data for our tests.
 
   ```elixir
 
     scenario "testing sum operation works as expected" do
     
-      beforeEach do
+      before_each do
         %{a: 10}
       end
 
