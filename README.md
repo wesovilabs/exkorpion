@@ -174,7 +174,14 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
       MIX_ENV=test mix exkorpion
     ```
-  - Exkorpion provides with a friendly resume about our tests execution.   
+  - Exkorpion provides with a friendly resume about our tests execution.
+  
+  **Success execution**
+  ![exkorpion success](https://github.com/wesovilabs/exkorpion/blob/feature-0.0.2/images/scenario-success.png)
+
+
+  **Something went wrong!**
+  ![exkorpion error](https://github.com/wesovilabs/exkorpion/blob/feature-0.0.2/images/scenario-error.png)   
 
 ### Samples
 
