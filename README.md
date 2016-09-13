@@ -46,7 +46,9 @@ In case of you don't have a elixir environment ready to code, please have a look
 
 ### Exkorpion syntax
 
+AS it was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
+**Scenario**
 
 
 Below you can find some very basic examples of how to use  **Exkorpion**
