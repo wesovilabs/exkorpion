@@ -34,7 +34,9 @@ In case of you don't have a elixir environment ready to code, please have a look
 
   - It is completely compatible with ExUnit.
 
-  
+  - It force us to structure our tests in steps (given-when-then)
+
+  - It is based on a functional syntax, organization our tests steps by anonymous functions.
 
 
 
