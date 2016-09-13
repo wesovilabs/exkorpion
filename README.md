@@ -176,24 +176,9 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
     ```
 
 
-
-
-
-
-
-    
-## How to run
-
-- Make a **scenarios** directory in your project
-- Add files with sufix **_scenario.ex** or **_scenario.exs**
-- Implementing some test as example above.
-- Run  command **MIX_ENV=test mix exkorpion**
-    
-    
-
 ## Contributors
 
-- **Iván Corrales Solera** , <developer@wesovi.com>, [@wesovilabs](https://www.twitter.com/wesovilabs)
+- **Iván Corrales Solera** , <developer@wesovi.com>, [@wesovilabs](https://www.twitter.com/wesovilabs), [Linkeding](www.linkedin.com/in/ivan-corrales-solera)
 
 ## Stable version
 
