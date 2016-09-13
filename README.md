@@ -174,6 +174,11 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
       MIX_ENV=test mix exkorpion
     ```
+  - Exkorpion provides with a friendly resume about our tests execution.   
+
+### Samples
+
+  It's highly recommendable you to have a look at some samples already developed: 
 
 
 ## Contributors
