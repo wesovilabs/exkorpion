@@ -187,7 +187,7 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
   It's highly recommendable you to have a look at some samples already developed: 
 
-  - [Exkorpion project](https://github.com/wesovilabs/exkorpion/scenarios)
+  - [Exkorpion project](https://github.com/wesovilabs/exkorpion/tree/develop/scenarios)
   - [Maru training](https://github.com/wesovilabs/elixir_maru_training/scenarios)
 
 
