@@ -160,6 +160,7 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
   - Once we have added exkorpion dependency to our test we can run the below command
 
   ```elixir
+  
     mix exkorpion.init
   ```
 
