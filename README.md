@@ -26,11 +26,15 @@ In case of you don't have a elixir environment ready to code, please have a look
   - [Mix dependencies](https://hex.pm/docs/usage)
 
 
-## Overview
+## Exkorpion goals
 
-  - Exkorpion wraps ExUnit and enhances their features providing developers with a BDD syntax. 
+  - It wraps ExUnit and enhances their features providing developers with a BDD syntax. 
 
-  - Exkorpion helps to write tests wasy-to-read.
+  - It helps us to write tests wasy-to-read.
+
+  - It is completely compatible with ExUnit.
+
+  
 
 
 
