@@ -18,24 +18,19 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
     end
     ```
 
-  2. Ensure `exkorpion` is started before your application:
 
-    ```elixir
-    def application do
-      [applications: [:exkorpion]]
-    end
-    ```
-
-In case ofy ou don't have a elixir environment ready please have a look at the below links:
+In case of you don't have a elixir environment ready to code, please have a look at the below links:
 
   - [Elixir installation](http://elixir-lang.org/install.html)
   - [Mix introduction](http://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html)
   - [Mix dependencies](https://hex.pm/docs/usage)
 
 
-## Getting started with Exkorpion
+## Overview
 
-Wrapping ExUnit to achieve a BDD syntax for our tests.
+Exkorpion wraps ExUnit and enhance their features providing developers with a BDD syntax
+
+
 
 Below you can find some very basic examples of how to use  **Exkorpion**
 
