@@ -48,7 +48,7 @@ In case of you don't have a elixir environment ready to code, please have a look
 
 As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
-**Scenario**
+**Scenario**:  A scenario is composed by a set of tests to check a functionality of our software works as expected. Below some of the benefits of writing scenarios instead of unit tests:
 
 
 Below you can find some very basic examples of how to use  **Exkorpion**
