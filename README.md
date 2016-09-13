@@ -56,9 +56,17 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
 
     ```elixir
-    
-      scenario "Testing TrackRouterV1 - Mocked results" do
 
+      scenario "testing sum operation works as expected" do
+
+
+         it "sum positive numbers works as expected" do
+
+         end
+
+         it "sum negative numbers and it should work as expected" do
+
+         end
 
       end
     ```
