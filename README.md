@@ -157,12 +157,14 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
 ### First steps
 
-  - Once we have added exkorpion dependency to our test we can run the below command. This will created a **scenario** directory on our poejct and it will include a scenario_helper.exs
+  - Once we have added exkorpion dependency to our test we can run the below command. This will creae a **scenario** directory on our poejct with a file named **scenario_helper.exs**.
 
   ```elixir
 
     mix exkorpion.init
   ```
+
+  - By default **Exkorpion** will search files ended by **.._scenario.exs** inside directory scenarios. This could be easyly customized (We explain in following articles.)
 
 
 
