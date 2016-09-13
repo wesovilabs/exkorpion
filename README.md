@@ -76,7 +76,7 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
 **given/when/then**: These word are the ones that provide us with s BDD syntax. Actually even when we write some unit tests we should thinkg about them.
 
-  - *Given*: It defines the input data for performing the tests.
+  - *Given*: It defines the input data for performing the tests. (It's an optional step, it could be not neccessary sometimes)
   - *When*:  It performs the action to be tested.
   - *Then*:  It ensures the result in the preoviuos step are the expected.
 
