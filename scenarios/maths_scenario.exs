@@ -11,7 +11,7 @@ defmodule Exkorpion.MathExamplesTest do
 
   scenario "testing sum operation works as expected" do
  
-    beforeEach do
+    before_each do
       %{a: 12}
     end
 
@@ -38,7 +38,7 @@ defmodule Exkorpion.MathExamplesTest do
   
   scenario "testing sum operation works as expected 2" do
     
-    beforeEach do
+    before_each do
       %{a: 10}
     end
 

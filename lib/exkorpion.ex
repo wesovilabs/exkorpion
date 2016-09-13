@@ -43,7 +43,7 @@ defmodule Exkorpion do
     end
   end
 
-  defmacro beforeEach(options) do
+  defmacro before_each(options) do
     setup = 
     quote do
       global_ctx = (unquote(options)[:do])

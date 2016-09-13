@@ -12,7 +12,7 @@ defmodule Exkorpion.MathExamplesDuplicatedTest do
   
   scenario "testing sum operation works as expected 4" do
     
-    beforeEach do
+    before_each do
       %{a: 10}
     end
 
