@@ -55,10 +55,11 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
   - Working under an agile methodology we can match scenarios to acceptance criteria
 
 
-    ```
+    ```elixir
+    
       scenario "Testing TrackRouterV1 - Mocked results" do
 
-        
+
       end
     ```
 
