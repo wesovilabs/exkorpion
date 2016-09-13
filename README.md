@@ -179,7 +179,3 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 ## Contributors
 
 - **Iván Corrales Solera** :  You could reach me by , [email](mailto:developer@wesovi.com), [twitter](https://www.twitter.com/wesovilabs) or [Linkedin](www.linkedin.com/in/ivan-corrales-solera)
-
-## Stable version
-
-**0.0.1** is the stable version
