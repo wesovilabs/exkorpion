@@ -80,7 +80,8 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
   - *When*:  It performs the action to be tested.
   - *Then*:  It ensures the result in the preoviuos step are the expected.
 
-  ``èlixir
+
+  ```elixir
 
     it "Ensures that get tracks service returns always 2 elements" do
       %{
