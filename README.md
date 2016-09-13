@@ -74,7 +74,7 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
   ```
 
 
-**given/when/then**: These word are the ones that provide us with s BDD syntax. Actually even when we write some unit tests we should thinkg about them.
+**with/given/when/then**: These word are the ones that provide us with s BDD syntax. Actually even when we write some unit tests we should thinkg about them.
 
   - *Given*: It defines the input data for performing the tests. (It's an optional step, it could be not neccessary sometimes)
   - *When*:  It performs the action to be tested.
@@ -120,6 +120,41 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
       }
     end
   ```
+
+**beforeEach**: Before each will be inside of a scenario and provices with a reusable set of data for our tests.
+
+  ```elixir
+
+    scenario "testing sum operation works as expected" do
+    
+      beforeEach do
+        %{a: 10}
+      end
+
+      it "sum positive numbers works as expected" do
+        %{
+          given: &(%{a: &1.a, b: 3}),
+          when: &(%{c: &1.a + &1.b}),
+          then: fn ctx ->
+            assert ctx.c === 13
+          end
+        }
+      end
+
+      it "sum negative numbers and it should work as expected" do
+        %{
+          given: &(%{a: &1.a, b: -2}),
+          when: &(%{c: sum(&1.a ,&1.b)}),
+          then: fn ctx ->
+            assert ctx.c === 8
+          end
+        }
+      end
+
+    end
+  ``
+
+
 
 Below you can find some very basic examples of how to use  **Exkorpion**
 
