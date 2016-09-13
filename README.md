@@ -164,7 +164,7 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
     mix exkorpion.init
   ```
 
-  - By default **Exkorpion** will search files ended by **.._scenario.exs** inside directory scenarios. This could be easyly customized (We explain in following articles.)
+  - By default **Exkorpion** will search files ended by "**.._scenario.exs**" inside directory scenarios. This could be easyly customized (We explain in following articles.)
 
 
 
