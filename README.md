@@ -80,6 +80,20 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
   - *When*:  It performs the action to be tested.
   - *Then*:  It ensures the result in the preoviuos step are the expected.
 
+  ``èlixir
+
+    it "Ensures that get tracks service returns always 2 elements" do
+      %{
+        when: fn _ ->
+          %{result: build_conn() |> get("/tracks", "v1") |> json_response |> Poison.decode! }
+        end,  
+        then: fn ctx ->
+          assert 2 === length(ctx.result)
+        end   
+      }
+    end
+  ```
+
 
 
 Below you can find some very basic examples of how to use  **Exkorpion**
