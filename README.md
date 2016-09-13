@@ -57,8 +57,6 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 **it**: Exkorpion provide with a reserved word It to represent any of the cases inside a scenario.
 
 
-  Example:
-
 
   ```elixir
 
