@@ -14,7 +14,7 @@ Library is [available in Hex](http://hexdocs.pm/exkorpion), the package can be i
 
     ```elixir
     def deps do
-      [{:exkorpion, "~> 0.0.2"}]
+      [{:exkorpion, "~> 0.0.3"}]
     end
     ```
 
@@ -177,11 +177,11 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
   - Exkorpion provides with a friendly resume about our tests execution.
   
   **Success execution**
-  ![exkorpion success](https://github.com/wesovilabs/exkorpion/blob/feature-0.0.2/images/scenario-success.png)
+  ![exkorpion success](https://github.com/wesovilabs/exkorpion/blob/master/images/scenario-success.png)
 
 
   **Something went wrong!**
-  ![exkorpion error](https://github.com/wesovilabs/exkorpion/blob/feature-0.0.2/images/scenario-error.png)   
+  ![exkorpion error](https://github.com/wesovilabs/exkorpion/blob/master/images/scenario-error.png)   
 
 ### Samples
 
@@ -193,4 +193,4 @@ As was mentioned on the above Exkorpion is mainly oriented to a bdd syntax:
 
 ## Contributors
 
-- **Iván Corrales Solera** :  You could reach me by , [email](mailto:developer@wesovi.com), [twitter](https://www.twitter.com/wesovilabs) or [Linkedin](www.linkedin.com/in/ivan-corrales-solera)
+- **Iván Corrales Solera** :  You could reach me by , [email](mailto:developer@wesovilabs.com), [twitter](https://www.twitter.com/wesovilabs) or [Linkedin](www.linkedin.com/in/ivan-corrales-solera)
