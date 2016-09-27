@@ -27,7 +27,7 @@ defmodule Exkorpion.Mixfile do
   defp package do
     [
      files: ["lib", "mix.exs", "README.md"],
-     maintainers: ["Ivan Corrales Solera <developer@wesovi.com>"],
+     maintainers: ["Ivan Corrales Solera <developer@wesovilabs.com>"],
      licenses: ["Apache 2.0"],
      links: %{"GitHub" => "https://github.com/wesovilabs/exkorpion",
               "Docs" => "http://hexdocs.pm/exkorpion/"}
